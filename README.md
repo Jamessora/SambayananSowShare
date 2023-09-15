@@ -12,7 +12,7 @@ Urban communities are grappling with the escalating prices of food items, which 
 3. Solution
 To address the identified problem I decided to develop of a web application platform where residents can list and exchange home-grown produce. 
 
-#############################################################################################################################
+##################################################################################
 
 Functionalities:
 
@@ -45,7 +45,7 @@ Transaction Oversight:
 
 Admin Story #7: As an Admin, I want to oversee all transactions on the marketplace to ensure fair and smooth operations.
 
-###############################################################################################################################
+##################################################################################
 Technology Stack Overview
 
 Backend: Ruby on Rails
@@ -60,7 +60,12 @@ ReactJS will be used for the frontend development, enabling us to create a dynam
 Integration and Deployment
 Integration between the frontend and backend will be facilitated through RESTful APIs developed in Rails, ensuring smooth data flow within the application. The complete application will be hosted on a suitable web server, offering users a seamless platform to engage with urban agriculture initiatives.
 
+##################################################################################
+
+Entity Relationship Diagram 
+
+
 ![diagram-export-9_15_2023, 3_13_10 PM](https://github.com/Jamessora/SambayananSowShare/assets/84948041/3aac0518-2cde-481b-9e34-52d7de18c2df)
 
-
+Note: "*" corresponds to many
 
