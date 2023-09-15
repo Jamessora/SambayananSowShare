@@ -30,9 +30,9 @@ Functionalities:
 
   Marketplace and Transactions:
 
-    User Story #6: As a Resident, I want to list my home-grown crops on the marketplace to share or sell them within my community.
+    User Story #5: As a Resident, I want to list my home-grown crops on the marketplace to share or sell them within my community.
 
-    User Story #8: As a Resident, I want to have a Transactions page to monitor all the exchanges I have made on the marketplace.
+    User Story #6: As a Resident, I want to have a Transactions page to monitor all the exchanges I have made on the marketplace.
 
 Administrators:
 
