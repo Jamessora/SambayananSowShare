@@ -16,54 +16,63 @@ To address the identified problem I decided to develop of a web application plat
 
 Functionalities:
 
-Residents (Users):
+  Residents (Users):
 
-Account Creation and Management:
+  Account Creation and Management:
 
-User Story #1: As a Resident, I want to create an account to access personalized suggestions and marketplace features.
-User Story #2: As a Resident, I want to log in with my credentials to access my account and utilize the app's features.
-User Story #3: As a Resident, I want to receive an email confirming my registration to ensure my account is securely created.
-User Story #4: As a Resident, I want to receive notification once my account is approved to start using the app.
+    User Story #1: As a Resident, I want to create an account to access personalized suggestions and marketplace features.
 
-Marketplace and Transactions:
+    User Story #2: As a Resident, I want to log in with my credentials to access my account and utilize the app's features.
 
-User Story #6: As a Resident, I want to list my home-grown crops on the marketplace to share or sell them within my community.
-User Story #8: As a Resident, I want to have a Transactions page to monitor all the exchanges I have made on the marketplace.
+    User Story #3: As a Resident, I want to receive an email confirming my registration to ensure my account is securely created.
+
+    User Story #4: As a Resident, I want to receive notification once my account is approved to start using the app.
+
+  Marketplace and Transactions:
+
+    User Story #6: As a Resident, I want to list my home-grown crops on the marketplace to share or sell them within my community.
+
+    User Story #8: As a Resident, I want to have a Transactions page to monitor all the exchanges I have made on the marketplace.
 
 Administrators:
 
-User Management:
+  User Management:
 
-Admin Story #1: As an Admin, I want to create new user accounts manually to assist residents who may have trouble registering themselves.
-Admin Story #2: As an Admin, I want to edit specific user details to maintain the accuracy and timeliness of information on the platform.
-Admin Story #3: As an Admin, I want to view specific user profiles to assist with inquiries or issues they may have.
-Admin Story #4: As an Admin, I want to monitor all registered users to maintain a safe and active community.
-Admin Story #5: As an Admin, I want to have a page to track pending user registrations to facilitate timely approvals.
-Admin Story #6: As an Admin, I want to approve user registrations to enable them to actively participate in the community.
+    Admin Story #1: As an Admin, I want to create new user accounts manually to assist residents who may have trouble registering themselves.
 
-Transaction Oversight:
+    Admin Story #2: As an Admin, I want to edit specific user details to maintain the accuracy and timeliness of information on the platform.
 
-Admin Story #7: As an Admin, I want to oversee all transactions on the marketplace to ensure fair and smooth operations.
+    Admin Story #3: As an Admin, I want to view specific user profiles to assist with inquiries or issues they may have.
+  
+    Admin Story #4: As an Admin, I want to monitor all registered users to maintain a safe and active community.
+  
+    Admin Story #5: As an Admin, I want to have a page to track pending user registrations to facilitate timely approvals.
+  
+    Admin Story #6: As an Admin, I want to approve user registrations to enable them to actively participate in the community.
+
+  Transaction Oversight:
+
+    Admin Story #7: As an Admin, I want to oversee all transactions on the marketplace to ensure fair and smooth operations.
 
 ##################################################################################
 
 Technology Stack Overview
 
-Backend: Ruby on Rails
+  Backend: Ruby on Rails
 
-Ruby on Rails will be utilized for the backend, a robust framework known for its simplicity and productivity, to manage business logic and database interactions efficiently.
+    Ruby on Rails will be utilized for the backend, a robust framework known for its simplicity and productivity, to manage business logic and database interactions efficiently.
 
-Database: PostgreSQL
+  Database: PostgreSQL
 
-PostgreSQL will serve as our database system, providing a reliable and scalable environment for storing vital application data, including user details and transaction records.
+    PostgreSQL will serve as our database system, providing a reliable and scalable environment for storing vital application data, including user details and transaction records.
 
-Frontend: ReactJS
+  Frontend: ReactJS
 
-ReactJS will be used for the frontend development, enabling us to create a dynamic and responsive user interface. This JavaScript library allows for the development of user-friendly single-page applications with efficient data rendering.
+    ReactJS will be used for the frontend development, enabling us to create a dynamic and responsive user interface. This JavaScript library allows for the development of user-friendly single-page applications with efficient data rendering.
 
-Integration and Deployment
+  Integration and Deployment
 
-Integration between the frontend and backend will be facilitated through RESTful APIs developed in Rails, ensuring smooth data flow within the application. The complete application will be hosted on render, offering users a seamless platform to engage with urban agriculture initiatives.
+    Integration between the frontend and backend will be facilitated through RESTful APIs developed in Rails, ensuring smooth data flow within the application. The complete application will be hosted on render, offering users a seamless platform to engage with urban agriculture initiatives.
 
 ##################################################################################
 
