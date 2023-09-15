@@ -49,7 +49,7 @@ Admin Story #7: As an Admin, I want to oversee all transactions on the marketpla
 Technology Stack Overview
 
 Backend: Ruby on Rails
-We will utilize Ruby on Rails for the backend, a robust framework known for its simplicity and productivity, to manage business logic and database interactions efficiently.
+Ruby on Rails will be utilized for the backend, a robust framework known for its simplicity and productivity, to manage business logic and database interactions efficiently.
 
 Database: PostgreSQL
 PostgreSQL will serve as our database system, providing a reliable and scalable environment for storing vital application data, including user details and transaction records.
@@ -58,7 +58,7 @@ Frontend: ReactJS
 ReactJS will be used for the frontend development, enabling us to create a dynamic and responsive user interface. This JavaScript library allows for the development of user-friendly single-page applications with efficient data rendering.
 
 Integration and Deployment
-Integration between the frontend and backend will be facilitated through RESTful APIs developed in Rails, ensuring smooth data flow within the application. The complete application will be hosted on a suitable web server, offering users a seamless platform to engage with urban agriculture initiatives.
+Integration between the frontend and backend will be facilitated through RESTful APIs developed in Rails, ensuring smooth data flow within the application. The complete application will be hosted on render, offering users a seamless platform to engage with urban agriculture initiatives.
 
 ##################################################################################
 
