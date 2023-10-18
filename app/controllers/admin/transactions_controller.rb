@@ -41,5 +41,5 @@ class Admin::TransactionsController < ApplicationController
         params.require(:transaction).permit(:buyer_id, :seller_id, :status, :total_price, transaction_crops_attributes: [:id, :crop_id, :quantity, :price, :_destroy])
       end
     end
-  end
+
   

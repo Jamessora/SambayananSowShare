@@ -49,5 +49,5 @@ class Admin::CropsController < ApplicationController
         params.require(:crop).permit(:crop_name, :crop_price, :crop_status, :crop_expiry_date, :crop_quantity, :user_id)
       end
     end
-  end
+
   
