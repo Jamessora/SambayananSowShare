@@ -85,4 +85,5 @@ test:
 production:
   <<: *default
   database: SambayananSowShare_production
-  
+  encoding: unicode
+  url: postgres://chronomemo_user:ebj33A1aEFu9tLsxbMh9C7ZqeRnM8SRc@dpg-cknluh1rfc9c73fv5tvg-a.singapore-postgres.render.com/sambayanansowshare_postgresql
