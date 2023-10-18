@@ -47,6 +47,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
       Rails.logger.debug "User does not have a password"
       # Handle users who have not set their password yet
       user.generate_initial_password_token!
+      puts "SendGrid API Key: #{ENV['SENDGRID_API_KEY']}"
       UserMailer.set_initial_password_email(user).deliver_now
     else
       Rails.logger.debug "User exists and has a password"
