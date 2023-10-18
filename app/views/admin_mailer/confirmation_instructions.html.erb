@@ -1,0 +1,7 @@
+<!-- app/views/user_mailer/confirmation_instructions.html.erb -->
+
+<h1>Welcome to My App, <%= @resource.email %>!</h1>
+
+<p>You can confirm your email through the link below:</p>
+
+<p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>

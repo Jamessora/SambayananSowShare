@@ -1,0 +1,45 @@
+class ApplicationController < ActionController::API
+    
+    include Devise::Controllers::Helpers
+    include ActionController::Flash
+    include ActionController::MimeResponds
+
+    
+
+    before_action :authenticate_user!, if: :user_controller?
+
+    def authenticate_user!
+        token = request.headers['Authorization'].split(' ').last
+        Rails.logger.debug "Received token: #{token}"
+        
+        # Your existing logic to decode and validate token
+        decoded_token = decoded_jwt(token) # Assuming decode_token is a method you have
+        @current_user = User.find(decoded_token["id"])
+        Rails.logger.debug "Decoded token: #{decoded_token}"
+        Rails.logger.debug "Decoded token: #{@current_user}"
+        Rails.logger.debug "Authenticated User: #{current_user.inspect}"
+        if decoded_token
+          # Authentication successful
+        else
+          Rails.logger.debug "Authentication failed"
+          render json: { error: 'Unauthorized' }, status: 401
+        end
+    end
+
+    def decoded_jwt(token)
+    decoded_token = JWT.decode(token, Rails.application.secrets.secret_key_base, true, { algorithm: 'HS256' })
+    decoded_token.first # Return the payload
+    rescue JWT::DecodeError => e
+    Rails.logger.error "JWT Decode Error: #{e.message}"
+    nil
+    end
+
+    private
+
+    def user_controller?
+        params[:controller].include?('users/')
+      end
+
+    
+      
+end

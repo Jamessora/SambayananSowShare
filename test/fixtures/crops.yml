@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  crop_name: MyString
+  crop_price: 9.99
+  crop_quantity: 1
+  crop_expiry_date: 2023-10-11 01:03:35
+  crop_status: MyString
+
+two:
+  crop_name: MyString
+  crop_price: 9.99
+  crop_quantity: 1
+  crop_expiry_date: 2023-10-11 01:03:35
+  crop_status: MyString
