@@ -1,5 +1,4 @@
-module Admin
-    class CropsController < ApplicationController
+class Admin::CropsController < ApplicationController
       before_action :authenticate_admin!
       before_action :set_crop, only: [:show, :update, :destroy]
   

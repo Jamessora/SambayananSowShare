@@ -1,5 +1,4 @@
-module Admin
-    class TransactionsController < ApplicationController
+class Admin::TransactionsController < ApplicationController
       before_action :authenticate_admin!
   
       # GET /admin/transactions
