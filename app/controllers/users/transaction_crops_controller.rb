@@ -9,7 +9,10 @@ class Users::TransactionCropsController < ApplicationController
   def index
     transaction_crops = TransactionCrop.joins(:transaction_record)
                                               .where(transactions: { buyer_id: params[:user_id], status: 'Pending' })
-    render json: { status: 'success', transaction_crops: transaction_crops }, status: :ok
+                                              .order('created_at ASC')
+                                              .includes(:crop)
+                                              
+    render json: { status: 'success', transaction_crops: transaction_crops }, include: [:crop],  status: :ok
   end
 
 

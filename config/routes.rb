@@ -58,7 +58,7 @@ Rails.application.routes.draw do
 
   resources :users do
     resources :crops, module: :users
-    resources :transactions, only: [:index, :create, :update], module: :users do
+    resources :transactions, only: [:index, :show, :create, :update], module: :users do
       resources :transaction_crops, only: [:index, :create, :update, :destroy]
     end
   end

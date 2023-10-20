@@ -10,5 +10,5 @@ class Transaction < ApplicationRecord
   validates :total_price, numericality: { greater_than_or_equal_to: 0 }, allow_nil: true
 
   # Inclusion validations the possible statuses
-  validates :status, inclusion: { in: ['Pending', 'For Seller Confirmation', 'For Buyer Payment', 'Payment Sent For Seller Confirmation', 'For Delivery', 'Completed', 'Cancelled'] }
+  validates :status, inclusion: { in: ['Pending', 'For Seller Confirmation', 'For Buyer Payment', 'Payment Sent For Seller Confirmation', 'For Delivery', 'Completed', 'Cancel'] }
 end

@@ -32,11 +32,23 @@ class Users::TransactionsController < ApplicationController
       transactions = transactions.where.not(status: 'Pending')
                                .joins(transaction_crops: :crop)
                                .includes(transaction_crops: :crop)
-      
+                               .joins('INNER JOIN users AS buyers ON transactions.buyer_id = buyers.id')
+                               .joins('INNER JOIN users AS sellers ON transactions.seller_id = sellers.id')
+                               .select('transactions.*, buyers."fullName" as buyer_name, sellers."fullName" as seller_name,
+                                      buyers."address_country" as buyer_country, buyers."address_city" as buyer_city,
+                                      buyers."address_baranggay" as buyer_baranggay, buyers."address_street" as buyer_street')
       render json: transactions, include: { transaction_crops: { include: :crop } }, status: :ok
     end
     
-
+    def show
+      transaction = Transaction.find_by(id: params[:id], buyer_id: current_user.id)
+      if transaction
+        render json: { status: 'success', transaction: transaction }, status: :ok
+      else
+        render json: { status: 'error', message: 'Transaction not found' }, status: :not_found
+      end
+    end
+    
 
     def create
       Rails.logger.debug "Creating a new transaction"
@@ -96,10 +108,11 @@ class Users::TransactionsController < ApplicationController
       if allowed_statuses.include?(new_status)
         # Update the total_price only when the status is 'For Seller Confirmation'
         if new_status == 'For Seller Confirmation'
+          
           total_price = @transaction.transaction_crops.sum(:price)
           Rails.logger.debug "Inside For Seller Confirmation block. Starting price calculation."
 
-          if @transaction.update(status: new_status, total_price: total_price)
+          if @transaction.update(status: new_status, total_price: total_price, status_updated_at: DateTime.now)
             Rails.logger.debug "Transaction updated successfully inside seller confirmation"
             render json: { status: 'success', message: 'Transaction updated successfully', transaction: @transaction }, status: :ok
           else

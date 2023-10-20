@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.12.3/application.js' type='text/javascript'></script>
     <link href='./assets/0.12.3/application.css' media='screen, projection, print' rel='stylesheet' type='text/css' />
-    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.12.3/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.12.3/favicon.png" />
   </head>
 
@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-18T12:07:06+08:00">2023-10-18T12:07:06+08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-19T14:35:11+08:00">2023-10-19T14:35:11+08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -22,15 +22,15 @@
   <h2>
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
-      <span class="red">
-  71.43%
+      <span class="yellow">
+  83.89%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.73
+       <span class="green">
+         2.02
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>23</b> files in total.
+    <b>27</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>301</b> relevant lines,
-    <span class="green"><b>215</b> lines covered</span> and
-    <span class="red"><b>86</b> lines missed. </span>
-    (<span class="red">
-  71.43%
+    <b>416</b> relevant lines,
+    <span class="green"><b>349</b> lines covered</span> and
+    <span class="red"><b>67</b> lines missed. </span>
+    (<span class="yellow">
+  83.89%
 </span>
 )
   </div>
@@ -71,24 +71,35 @@
       <tbody>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#9a8c0cb665eda1a8cc41e7f205b98aa094cd94ee" class="src_link" title="app/controllers/admin/users_controller.rb">app/controllers/admin/users_controller.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">22.73 %</td>
-            <td class="cell--number">130</td>
-            <td class="cell--number">44</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">34</td>
-            <td class="cell--number">0.23</td>
+            <td class="strong t-file__name"><a href="#05f5d6491ab05bd3f080ce0f3d70abc28f7725e7" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">37.50 %</td>
+            <td class="cell--number">45</td>
+            <td class="cell--number">24</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">0.38</td>
             
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#05f5d6491ab05bd3f080ce0f3d70abc28f7725e7" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">41.67 %</td>
-            <td class="cell--number">45</td>
-            <td class="cell--number">24</td>
+            <td class="strong t-file__name"><a href="#a001a1d50f76811038b7275df4045760c7457c01" class="src_link" title="app/controllers/concerns/user_actions.rb">app/controllers/concerns/user_actions.rb</a></td>
+            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
+            <td class="cell--number">22</td>
+            <td class="cell--number">12</td>
             <td class="cell--number">10</td>
-            <td class="cell--number">14</td>
-            <td class="cell--number">0.42</td>
+            <td class="cell--number">2</td>
+            <td class="cell--number">3.33</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#e45d97bdeafca11237a58bee7aaf9646b9cd8552" class="src_link" title="app/controllers/users/transaction_crops_controller.rb">app/controllers/users/transaction_crops_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">78.67 %</td>
+            <td class="cell--number">159</td>
+            <td class="cell--number">75</td>
+            <td class="cell--number">59</td>
+            <td class="cell--number">16</td>
+            <td class="cell--number">1.59</td>
             
           </tr>
         
@@ -115,6 +126,17 @@
           </tr>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#3199df8dc681e792262d163ae159b0086ffb349a" class="src_link" title="app/models/crop.rb">app/models/crop.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">11</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#26a37d237c206c7ed59e7b7b39b7d8256149fec4" class="src_link" title="app/models/jwt_denylist.rb">app/models/jwt_denylist.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">6</td>
@@ -126,13 +148,35 @@
           </tr>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#bc5638419d3019e70e47aac08f77af6cfc3284f9" class="src_link" title="app/models/transaction.rb">app/models/transaction.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">14</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#73f46140ea750ff3b7fbb184e1db8ba0a6d3e011" class="src_link" title="app/models/transaction_crop.rb">app/models/transaction_crop.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">6</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#5487d4107c53aea162153c003cd108526b106b9d" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">40.00 %</td>
+            <td class="red strong cell--number t-file__coverage">43.64 %</td>
             <td class="cell--number">134</td>
             <td class="cell--number">55</td>
-            <td class="cell--number">22</td>
-            <td class="cell--number">33</td>
-            <td class="cell--number">0.40</td>
+            <td class="cell--number">24</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">3.45</td>
             
           </tr>
         
@@ -236,13 +280,13 @@
           </tr>
         
           <tr class="t-file">
-            <td class="strong t-file__name"><a href="#d26f48fbdd4653a9e6214a9e8ce0b7eba057c5c9" class="src_link" title="spec/controllers/admin/users_controller_spec.rb">spec/controllers/admin/users_controller_spec.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">90.91 %</td>
-            <td class="cell--number">128</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">1.00</td>
+            <td class="strong t-file__name"><a href="#712a50e9f83a79ac7716f9466f0b0d9f15ca8ad6" class="src_link" title="spec/controllers/users/transaction_crops_controller_spec.rb">spec/controllers/users/transaction_crops_controller_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">125</td>
+            <td class="cell--number">60</td>
+            <td class="cell--number">60</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.80</td>
             
           </tr>
         
@@ -253,7 +297,7 @@
             <td class="cell--number">5</td>
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.40</td>
+            <td class="cell--number">1.00</td>
             
           </tr>
         
@@ -264,18 +308,18 @@
             <td class="cell--number">8</td>
             <td class="cell--number">8</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">3.63</td>
             
           </tr>
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#9dc49b5f1364b81b74407b8ee8519e38974b4314" class="src_link" title="spec/factories/transaction_crops.rb">spec/factories/transaction_crops.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">85.71 %</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">11</td>
             <td class="cell--number">7</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">1</td>
-            <td class="cell--number">0.86</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.57</td>
             
           </tr>
         
@@ -286,7 +330,7 @@
             <td class="cell--number">5</td>
             <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">2.40</td>
             
           </tr>
         
@@ -297,7 +341,7 @@
             <td class="cell--number">23</td>
             <td class="cell--number">22</td>
             <td class="cell--number">1</td>
-            <td class="cell--number">0.96</td>
+            <td class="cell--number">7.65</td>
             
           </tr>
         
@@ -340,1473 +384,12 @@
 
       <div class="source_files">
       
-        <div class="source_table" id="9a8c0cb665eda1a8cc41e7f205b98aa094cd94ee">
-  <div class="header">
-    <h3>app/controllers/admin/users_controller.rb</h3>
-    <h4>
-      <span class="red">
-  22.73%
-</span>
-
-      lines covered
-    </h4>
-
-    
-
-    <div class="t-line-summary">
-      <b>44</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>34</b> lines missed.</span>
-    </div>
-
-    
-
-  </div>
-
-  <pre>
-    <ol>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="1">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">class Admin::UsersController &lt; ApplicationController</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="2">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    include Rails.application.routes.url_helpers</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      before_action :authenticate_admin!</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="4">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="5">
-            
-            
-
-            
-
-            <code class="ruby">      # GET /admin/users</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      def index</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby">        puts &quot;Index method called&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="8">
-            
-            
-
-            
-
-            <code class="ruby">        users = User.all</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="9">
-            
-            
-
-            
-
-            <code class="ruby">        response_data = users.map do |user|</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="10">
-            
-            
-
-            
-
-            <code class="ruby">            user_data = {</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="11">
-            
-            
-
-            
-
-            <code class="ruby">              id: user.id,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
-            
-            
-
-            
-
-            <code class="ruby">              email: user.email,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
-            
-
-            <code class="ruby">              fullName: user.fullName,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
-            
-
-            <code class="ruby">              birthday: user.birthday,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
-            
-
-            <code class="ruby">              address_country: user.address_country,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">              address_city: user.address_city,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">              address_baranggay: user.address_baranggay,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
-            
-
-            <code class="ruby">              address_street: user.address_street,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
-            
-            
-
-            
-
-            <code class="ruby">              kyc_status: user.kyc_status</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
-            
-
-            <code class="ruby">            }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="21">
-            
-            
-
-            
-
-            <code class="ruby">           </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="22">
-            
-            
-
-            
-
-            <code class="ruby">    </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
-            
-
-            <code class="ruby">          end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="24">
-            
-            
-
-            
-
-            <code class="ruby">        </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="25">
-            
-            
-
-            
-
-            <code class="ruby">        render json: response_data</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="26">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="27">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="28">
-            
-            
-
-            
-
-            <code class="ruby">    </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="29">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="30">
-            
-            
-
-            
-
-            <code class="ruby">      # GET /admin/users/:id</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="31">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      def show</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="32">
-            
-            
-
-            
-
-            <code class="ruby">        puts &quot;Show method called with params: #{params[:id]}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="33">
-            
-            
-
-            
-
-            <code class="ruby">        user = User.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="34">
-            
-            
-
-            
-
-            <code class="ruby">        </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="35">
-            
-            
-
-            
-
-            <code class="ruby">        user_data = {</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="36">
-            
-            
-
-            
-
-            <code class="ruby">          id: user.id,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="37">
-            
-            
-
-            
-
-            <code class="ruby">          email: user.email,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
-            
-
-            <code class="ruby">          fullName: user.fullName,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
-            
-
-            <code class="ruby">          birthday: user.birthday,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="40">
-            
-            
-
-            
-
-            <code class="ruby">          address_country: user.address_country,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="41">
-            
-            
-
-            
-
-            <code class="ruby">          address_city: user.address_city,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="42">
-            
-            
-
-            
-
-            <code class="ruby">          address_baranggay: user.address_baranggay,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="43">
-            
-            
-
-            
-
-            <code class="ruby">          address_street: user.address_street,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="44">
-            
-            
-
-            
-
-            <code class="ruby">          kyc_status: user.kyc_status,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="45">
-            
-            
-
-            
-
-            <code class="ruby">          crops: user.crops.map { |crop| </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="46">
-            
-            
-
-            
-
-            <code class="ruby">            {</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="47">
-            
-            
-
-            
-
-            <code class="ruby">              id: crop.id,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="48">
-            
-            
-
-            
-
-            <code class="ruby">              crop_name: crop.crop_name,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="49">
-            
-            
-
-            
-
-            <code class="ruby">              crop_price: crop.crop_price,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="50">
-            
-            
-
-            
-
-            <code class="ruby">              # ... other attributes</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="51">
-            
-            
-
-            
-
-            <code class="ruby">            }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="52">
-            
-            
-
-            
-
-            <code class="ruby">          },</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="53">
-            
-            
-
-            
-
-            <code class="ruby">          bought_transactions: user.bought_transactions.map { |transaction| </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="54">
-            
-            
-
-            
-
-            <code class="ruby">            {</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="55">
-            
-            
-
-            
-
-            <code class="ruby">              id: transaction.id,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="56">
-            
-            
-
-            
-
-            <code class="ruby">              status: transaction.status,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="57">
-            
-            
-
-            
-
-            <code class="ruby">              total_price: transaction.total_price,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="58">
-            
-            
-
-            
-
-            <code class="ruby">              # ... other attributes</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="59">
-            
-            
-
-            
-
-            <code class="ruby">            }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="60">
-            
-            
-
-            
-
-            <code class="ruby">          },</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="61">
-            
-            
-
-            
-
-            <code class="ruby">          sold_transactions: user.sold_transactions.map { |transaction| </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="62">
-            
-            
-
-            
-
-            <code class="ruby">            {</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="63">
-            
-            
-
-            
-
-            <code class="ruby">              id: transaction.id,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="64">
-            
-            
-
-            
-
-            <code class="ruby">              status: transaction.status,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="65">
-            
-            
-
-            
-
-            <code class="ruby">              total_price: transaction.total_price,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="66">
-            
-            
-
-            
-
-            <code class="ruby">              # ... other attributes</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="67">
-            
-            
-
-            
-
-            <code class="ruby">            }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="68">
-            
-            
-
-            
-
-            <code class="ruby">          }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="69">
-            
-            
-
-            
-
-            <code class="ruby">        }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="70">
-            
-            
-
-            
-
-            <code class="ruby">        </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="71">
-            
-            
-
-            
-
-            <code class="ruby">        render json: user_data, status: :ok</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="72">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="73">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="74">
-            
-            
-
-            
-
-            <code class="ruby">      #POST /admin/create</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="75">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      def create</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="76">
-            
-            
-
-            
-
-            <code class="ruby">        puts &quot;Debugging Params: #{params.inspect}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="77">
-            
-            
-
-            
-
-            <code class="ruby">        puts &quot;Params: #{params}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="78">
-            
-            
-
-            
-
-            <code class="ruby">        puts &quot;New User: #{User.new(params)}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="79">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="80">
-            
-            
-
-            
-
-            <code class="ruby">        begin</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="81">
-            
-            
-
-            
-
-            <code class="ruby">        @user = User.new(user_params)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="82">
-            
-            
-
-            
-
-            <code class="ruby">        @user.skip_kyc_validation = true</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="83">
-            
-            
-
-            
-
-            <code class="ruby">      </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="84">
-            
-            
-
-            
-
-            <code class="ruby">        if @user.save</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="85">
-            
-            
-
-            
-
-            <code class="ruby">          render json: { message: &#39;User created successfully.&#39;}, status: :ok</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="86">
-            
-            
-
-            
-
-            <code class="ruby">        else</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="87">
-            
-            
-
-            
-
-            <code class="ruby">            puts @user.errors.full_messages</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="88">
-            
-            
-
-            
-
-            <code class="ruby">            puts &quot;Debugging: #{@user.inspect}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="89">
-            
-            
-
-            
-
-            <code class="ruby">            puts @user.errors.full_messages</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="90">
-            
-            
-
-            
-
-            <code class="ruby">          render json: { message: &#39;Failed to create user.&#39; }, status: :unprocessable_entity</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="91">
-            
-            
-
-            
-
-            <code class="ruby">        end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="92">
-            
-            
-
-            
-
-            <code class="ruby">        rescue =&gt; e</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="93">
-            
-            
-
-            
-
-            <code class="ruby">            puts &quot;Exception: #{e.message}&quot;</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="94">
-            
-            
-
-            
-
-            <code class="ruby">        end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="95">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="96">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="97">
-            
-            
-
-            
-
-            <code class="ruby">      # PUT /admin/users/:id</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="98">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      def update</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="99">
-            
-            
-
-            
-
-            <code class="ruby">        user = User.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="100">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="101">
-            
-            
-
-            
-
-            <code class="ruby">        if user.update(user_params)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="102">
-            
-            
-
-            
-
-            <code class="ruby">          render json: { message: &#39;User updated successfully.&#39; }, status: :ok</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="103">
-            
-            
-
-            
-
-            <code class="ruby">        else</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="104">
-            
-            
-
-            
-
-            <code class="ruby">          render json: { message: &#39;Failed to update user.&#39;, errors: user.errors }, status: :unprocessable_entity</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="105">
-            
-            
-
-            
-
-            <code class="ruby">        end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="106">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="107">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="108">
-            
-            
-
-            
-
-            <code class="ruby">      # DELETE /admin/users/:id</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="109">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      def destroy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="110">
-            
-            
-
-            
-
-            <code class="ruby">        user = User.find(params[:id])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="111">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="112">
-            
-            
-
-            
-
-            <code class="ruby">        if user.destroy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="113">
-            
-            
-
-            
-
-            <code class="ruby">          render json: { message: &#39;User deleted successfully.&#39; }, status: :ok</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="114">
-            
-            
-
-            
-
-            <code class="ruby">        else</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="115">
-            
-            
-
-            
-
-            <code class="ruby">          render json: { message: &#39;Failed to delete user.&#39; }, status: :unprocessable_entity</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="116">
-            
-            
-
-            
-
-            <code class="ruby">        end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="117">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="118">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="119">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      private</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="120">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="121">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      def user_params</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="122">
-            
-            
-
-            
-
-            <code class="ruby">        params.require(:user).permit(</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="123">
-            
-            
-
-            
-
-            <code class="ruby">          :email, :password, :fullName, :birthday, :idType, :idNumber, :address_country,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="124">
-            
-            
-
-            
-
-            <code class="ruby">          :address_city, :address_baranggay, :address_street, :kyc_status,</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="125">
-            
-            
-
-            
-
-            <code class="ruby">         </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="126">
-            
-            
-
-            
-
-            <code class="ruby">        )</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="127">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="128">
-            
-            
-
-            
-
-            <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="129">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="130">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-    </ol>
-  </pre>
-</div>
-
-      
         <div class="source_table" id="05f5d6491ab05bd3f080ce0f3d70abc28f7725e7">
   <div class="header">
     <h3>app/controllers/application_controller.rb</h3>
     <h4>
       <span class="red">
-  41.67%
+  37.5%
 </span>
 
       lines covered
@@ -1816,8 +399,8 @@
 
     <div class="t-line-summary">
       <b>24</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>14</b> lines missed.</span>
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>15</b> lines missed.</span>
     </div>
 
     
@@ -2257,8 +840,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="40">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="40">
+            
             
 
             
@@ -2319,6 +902,2059 @@
             
 
             <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="a001a1d50f76811038b7275df4045760c7457c01">
+  <div class="header">
+    <h3>app/controllers/concerns/user_actions.rb</h3>
+    <h4>
+      <span class="yellow">
+  83.33%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>12</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">module UserActions</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    extend ActiveSupport::Concern</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">    </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def set_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="8">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">      @user = current_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="9">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">      Rails.logger.debug &quot;Current User: #{@user.inspect}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="10">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">      Rails.logger.debug &quot;Params User ID: #{params[:user_id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="11">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">      unless @user.id == params[:user_id].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;error&#39;, message: &#39;Unauthorized&#39; }, status: :unauthorized</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    def check_kyc_status</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="17">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">      unless current_user&amp;.kyc_status == &#39;approved&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;error&#39;, message: &#39;KYC approval is required to perform this action.&#39; }, status: :forbidden</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="e45d97bdeafca11237a58bee7aaf9646b9cd8552">
+  <div class="header">
+    <h3>app/controllers/users/transaction_crops_controller.rb</h3>
+    <h4>
+      <span class="red">
+  78.67%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>75</b> relevant lines.
+      <span class="green"><b>59</b> lines covered</span> and
+      <span class="red"><b>16</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Users::TransactionCropsController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  include UserActions</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="3">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before_action :authenticate_user!</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before_action :check_kyc_status</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before_action :set_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before_action :set_transaction, only: [:create, :update, :destroy]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">    transaction_crops = TransactionCrop.joins(:transaction_record)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">                                              .where(transactions: { buyer_id: params[:user_id], status: &#39;Pending&#39; })</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">                                              .includes(:crop)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby">    render json: { status: &#39;success&#39;, transaction_crops: transaction_crops }, include: [:crop],  status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def create</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="18">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">    ActiveRecord::Base.transaction do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="19">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">      Rails.logger.debug &quot;Attempting to create new transaction crop&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="20">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">      Rails.logger.debug &quot;Crop: #{Crop.find_by(id: params[:crop_id])}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="21">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">      Rails.logger.debug &quot;Params: #{params}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="22">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">      puts &quot;Controller Debug: Crop ID from params: #{params[:crop_id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby"> </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="25">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">      transaction_crop_params = params.require(:transaction_crop).permit(:transaction_id, :crop_id, :quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="26">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">      crop = Crop.find_by(id: transaction_crop_params[:crop_id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="5" data-linenumber="27">
+            <span class="hits">5</span>
+            
+
+            
+
+            <code class="ruby">      if crop.nil?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        Rails.logger.error &quot;Crop not found for ID: #{params[:crop_id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;error&#39;, message: &#39;Crop not found&#39; } and return</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="32">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      if crop.crop_quantity &lt;  transaction_crop_params[:quantity].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="33">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        Rails.logger.debug &quot;Crop quantity: #{crop.crop_quantity}, Requested quantity: #{ transaction_crop_params[:quantity].to_i}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        puts &quot;Crop quantity: #{crop.crop_quantity}, Requested quantity: #{ transaction_crop_params[:quantity].to_i}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        Rails.logger.error &quot;Not enough quantity for crop ID: #{params[:crop_id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;error&#39;, message: &#39;Not enough quantity available&#39; } and return</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="37">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="39">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      transaction = Transaction.find_by(id: transaction_crop_params[:transaction_id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="40">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      existing_transaction_crop = TransactionCrop.find_by(transaction_id: transaction_crop_params[:transaction_id], crop_id: transaction_crop_params[:crop_id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="42">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">      if transaction&amp;.status == &#39;Pending&#39; &amp;&amp; existing_transaction_crop</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby">        # Calculate the new quantity for the existing TransactionCrop</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        new_quantity_for_existing_transaction_crop = existing_transaction_crop.quantity + transaction_crop_params[:quantity].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby">        </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby">        # Update the existing TransactionCrop</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        existing_transaction_crop.update(</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">          price: new_quantity_for_existing_transaction_crop * crop.crop_price,</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="49">
+            
+            
+
+            
+
+            <code class="ruby">          quantity: new_quantity_for_existing_transaction_crop</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="50">
+            
+            
+
+            
+
+            <code class="ruby">        )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="52">
+            
+            
+
+            
+
+            <code class="ruby">        # Update the crop quantity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        new_crop_quantity = crop.crop_quantity - transaction_crop_params[:quantity].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        crop.update(crop_quantity: new_crop_quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="55">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="56">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;success&#39;, transaction_crop: existing_transaction_crop }, status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
+            <code class="ruby">      else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="58">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      @transaction_crop = TransactionCrop.new(transaction_crop_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="59">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      @transaction_crop.price = @transaction_crop.quantity * crop.crop_price</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="61">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">      if @transaction_crop.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
+            
+            
+
+            
+
+            <code class="ruby">        # Update the crop quantity</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="63">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">        new_quantity = crop.crop_quantity - transaction_crop_params[:quantity].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="64">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">        crop.update(crop_quantity: new_quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="65">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="66">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">        Rails.logger.debug &quot;Transaction Crop created successfully with ID: #{@transaction_crop.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="67">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;success&#39;, transaction_crop: @transaction_crop }, status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="68">
+            
+            
+
+            
+
+            <code class="ruby">      else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby">        Rails.logger.error &quot;Error creating Transaction Crop: #{@transaction_crop.errors.full_messages.join(&quot;, &quot;)}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;error&#39;, message: @transaction_crop.errors.full_messages }, status: :bad_request</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="74">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="75">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="77">
+            
+            
+
+            
+
+            <code class="ruby">  # def update</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="78">
+            
+            
+
+            
+
+            <code class="ruby">  #   begin</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="79">
+            
+            
+
+            
+
+            <code class="ruby">  #     Rails.logger.debug &quot;Attempting to update Transaction Crop with ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">  #     Rails.logger.debug &quot;@transaction_crop.quantity: #{@transaction_crop.quantity}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby">  #     Rails.logger.debug &quot;@transaction_crop.crop.crop_price: #{@transaction_crop.crop.crop_price}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="82">
+            
+            
+
+            
+
+            <code class="ruby">  #     puts &quot;Controller Debug: Crop ID from params: #{params[:crop_id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="83">
+            
+            
+
+            
+
+            <code class="ruby">  #     @transaction_crop = TransactionCrop.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="84">
+            
+            
+
+            
+
+            <code class="ruby">  #     @transaction_crop.quantity = params[:quantity]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby">  #     @transaction_crop.price = @transaction_crop.quantity * @transaction_crop.crop.crop_price</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="86">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="87">
+            
+            
+
+            
+
+            <code class="ruby">  #     if @transaction_crop.update(transaction_crop_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="88">
+            
+            
+
+            
+
+            <code class="ruby">  #       Rails.logger.debug &quot;Transaction Crop updated successfully with ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="89">
+            
+            
+
+            
+
+            <code class="ruby">  #       render json: { status: &#39;success&#39;, transaction_crop: @transaction_crop }, status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="90">
+            
+            
+
+            
+
+            <code class="ruby">  #     else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="91">
+            
+            
+
+            
+
+            <code class="ruby">  #       Rails.logger.error &quot;Error updating Transaction Crop: #{params[:id]}, Errors: #{@transaction_crop.errors.full_messages.join(&quot;, &quot;)}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="92">
+            
+            
+
+            
+
+            <code class="ruby">  #       render json: { status: &#39;error&#39;, message: @transaction_crop.errors.full_messages }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="93">
+            
+            
+
+            
+
+            <code class="ruby">  #     end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="94">
+            
+            
+
+            
+
+            <code class="ruby">  #   rescue ActiveRecord::RecordNotFound =&gt; e</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="95">
+            
+            
+
+            
+
+            <code class="ruby">  #     Rails.logger.error &quot;Transaction Crop not found for ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="96">
+            
+            
+
+            
+
+            <code class="ruby">  #     render json: { status: &#39;error&#39;, message: &#39;Transaction Crop not found&#39; }, status: :not_found</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="97">
+            
+            
+
+            
+
+            <code class="ruby">  #   end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="98">
+            
+            
+
+            
+
+            <code class="ruby">  # end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="99">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def update</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="100">
+            
+            
+
+            
+
+            <code class="ruby">    begin</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="101">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      Rails.logger.debug &quot;Attempting to update Transaction Crop with ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="102">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @transaction_crop = TransactionCrop.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="103">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      Rails.logger.debug &quot;@transaction_crop.quantity: #{@transaction_crop.quantity}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="104">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="105">
+            
+            
+
+            
+
+            <code class="ruby">      # Update the attributes using transaction_crop_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="106">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      if @transaction_crop.update(transaction_crop_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="107">
+            
+            
+
+            
+
+            <code class="ruby">        </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="108">
+            
+            
+
+            
+
+            <code class="ruby">        # Compute the price separately</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="109">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        @transaction_crop.price = @transaction_crop.quantity * @transaction_crop.crop.crop_price</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="110">
+            
+            
+
+            
+
+            <code class="ruby">        </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="111">
+            
+            
+
+            
+
+            <code class="ruby">        # Save the updated price</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="112">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        if @transaction_crop.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="113">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          Rails.logger.debug &quot;Transaction Crop updated successfully with ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="114">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">          render json: { status: &#39;success&#39;, transaction_crop: @transaction_crop }, status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="115">
+            
+            
+
+            
+
+            <code class="ruby">        else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="116">
+            
+            
+
+            
+
+            <code class="ruby">          Rails.logger.error &quot;Error updating Transaction Crop price: #{@transaction_crop.errors.full_messages.join(&quot;, &quot;)}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="117">
+            
+            
+
+            
+
+            <code class="ruby">          render json: { status: &#39;error&#39;, message: @transaction_crop.errors.full_messages }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="118">
+            
+            
+
+            
+
+            <code class="ruby">        end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="119">
+            
+            
+
+            
+
+            <code class="ruby">      else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="120">
+            
+            
+
+            
+
+            <code class="ruby">        Rails.logger.error &quot;Error updating Transaction Crop: #{params[:id]}, Errors: #{@transaction_crop.errors.full_messages.join(&quot;, &quot;)}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="121">
+            
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;error&#39;, message: @transaction_crop.errors.full_messages }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="122">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="123">
+            
+            
+
+            
+
+            <code class="ruby">    rescue ActiveRecord::RecordNotFound =&gt; e</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="124">
+            
+            
+
+            
+
+            <code class="ruby">      Rails.logger.error &quot;Transaction Crop not found for ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="125">
+            
+            
+
+            
+
+            <code class="ruby">      render json: { status: &#39;error&#39;, message: &#39;Transaction Crop not found&#39; }, status: :not_found</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="126">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="127">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="128">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="129">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="130">
+            
+            
+
+            
+
+            <code class="ruby">    begin</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="131">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      Rails.logger.debug &quot;Attempting to delete Transaction Crop with ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="132">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      @transaction_crop = TransactionCrop.find(params[:id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="133">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="134">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      if @transaction_crop.destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="135">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        Rails.logger.debug &quot;Transaction Crop deleted successfully with ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="136">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;success&#39;, message: &#39;Transaction crop deleted successfully&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="137">
+            
+            
+
+            
+
+            <code class="ruby">      else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="138">
+            
+            
+
+            
+
+            <code class="ruby">        Rails.logger.error &quot;Failed to delete Transaction Crop with ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="139">
+            
+            
+
+            
+
+            <code class="ruby">        render json: { status: &#39;error&#39;, message: &#39;Failed to delete transaction crop&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="140">
+            
+            
+
+            
+
+            <code class="ruby">      end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="141">
+            
+            
+
+            
+
+            <code class="ruby">    rescue ActiveRecord::RecordNotFound =&gt; e</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="142">
+            
+            
+
+            
+
+            <code class="ruby">      Rails.logger.error &quot;Transaction Crop not found for ID: #{params[:id]}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="143">
+            
+            
+
+            
+
+            <code class="ruby">      render json: { status: &#39;error&#39;, message: &#39;Transaction Crop not found&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="144">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="145">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="146">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="147">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="148">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="149">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="150">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def transaction_crop_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="151">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    params.require(:transaction_crop).permit(:transaction_id, :crop_id, :quantity)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="152">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="153">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="154">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def set_transaction</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="155">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    @transaction = Transaction.find_by(id: params[:transaction_id])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="156">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    render json: { status: &#39;error&#39;, message: &#39;Transaction not found&#39; } if @transaction.nil?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="157">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="158">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="159">
+            
+            
+
+            
+
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -2653,6 +3289,158 @@
 </div>
 
       
+        <div class="source_table" id="3199df8dc681e792262d163ae159b0086ffb349a">
+  <div class="header">
+    <h3>app/models/crop.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>9</b> relevant lines.
+      <span class="green"><b>9</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Crop &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    has_many :transaction_crops</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    has_many :transactions, through: :transaction_crops</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    belongs_to :user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    validates :crop_name, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    validates :crop_price, presence: true, numericality: { greater_than: 0 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    validates :crop_status, presence: true,  inclusion: { in: [&#39;available&#39;, &#39;unavailable&#39;, &#39;expired&#39;] }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    validates :crop_expiry_date, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    validates :crop_quantity, presence: true, numericality: { only_integer: true}</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="26a37d237c206c7ed59e7b7b39b7d8256149fec4">
   <div class="header">
     <h3>app/models/jwt_denylist.rb</h3>
@@ -2750,12 +3538,338 @@
 </div>
 
       
+        <div class="source_table" id="bc5638419d3019e70e47aac08f77af6cfc3284f9">
+  <div class="header">
+    <h3>app/models/transaction.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>8</b> relevant lines.
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Transaction &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    has_many :transaction_crops, foreign_key: &#39;transaction_id&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    has_many :crops, through: :transaction_crops</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :buyer, class_name: &#39;User&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :seller, class_name: &#39;User&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :buyer_id, :seller_id, :status, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  # Numericality validations </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :total_price, numericality: { greater_than_or_equal_to: 0 }, allow_nil: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  # Inclusion validations the possible statuses</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :status, inclusion: { in: [&#39;Pending&#39;, &#39;For Seller Confirmation&#39;, &#39;For Buyer Payment&#39;, &#39;Payment Sent For Seller Confirmation&#39;, &#39;For Delivery&#39;, &#39;Completed&#39;, &#39;Cancelled&#39;] }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="73f46140ea750ff3b7fbb184e1db8ba0a6d3e011">
+  <div class="header">
+    <h3>app/models/transaction_crop.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>6</b> relevant lines.
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class TransactionCrop &lt; ApplicationRecord</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :transaction_record, class_name: &#39;Transaction&#39;, foreign_key: &#39;transaction_id&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  belongs_to :crop</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :transaction_id, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :crop_id, presence: true</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="7">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  validates :quantity, numericality: { only_integer: true, greater_than: 0 }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="5487d4107c53aea162153c003cd108526b106b9d">
   <div class="header">
     <h3>app/models/user.rb</h3>
     <h4>
       <span class="red">
-  40.0%
+  43.64%
 </span>
 
       lines covered
@@ -2765,8 +3879,8 @@
 
     <div class="t-line-summary">
       <b>55</b> relevant lines.
-      <span class="green"><b>22</b> lines covered</span> and
-      <span class="red"><b>33</b> lines missed.</span>
+      <span class="green"><b>24</b> lines covered</span> and
+      <span class="red"><b>31</b> lines missed.</span>
     </div>
 
     
@@ -3690,8 +4804,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="84">
-            
+          <li class="covered" data-hits="84" data-linenumber="84">
+            <span class="hits">84</span>
             
 
             
@@ -3701,8 +4815,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="85">
-            
+          <li class="covered" data-hits="84" data-linenumber="85">
+            <span class="hits">84</span>
             
 
             
@@ -10705,12 +11819,12 @@
 </div>
 
       
-        <div class="source_table" id="d26f48fbdd4653a9e6214a9e8ce0b7eba057c5c9">
+        <div class="source_table" id="712a50e9f83a79ac7716f9466f0b0d9f15ca8ad6">
   <div class="header">
-    <h3>spec/controllers/admin/users_controller_spec.rb</h3>
+    <h3>spec/controllers/users/transaction_crops_controller_spec.rb</h3>
     <h4>
       <span class="green">
-  90.91%
+  100.0%
 </span>
 
       lines covered
@@ -10719,9 +11833,9 @@
     
 
     <div class="t-line-summary">
-      <b>11</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>60</b> relevant lines.
+      <span class="green"><b>60</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -10760,7 +11874,7 @@
 
             
 
-            <code class="ruby">RSpec.describe Admin::UsersController, type: :controller do</code>
+            <code class="ruby">RSpec.describe Users::TransactionCropsController, type: :controller do</code>
           </li>
         </div>
       
@@ -10771,23 +11885,12 @@
 
             
 
-            <code class="ruby">    include Devise::Test::ControllerHelpers</code>
+            <code class="ruby">  include Devise::Test::ControllerHelpers</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="5">
-            <span class="hits">2</span>
-            
-
-            
-
-            <code class="ruby">    let(:admin) { create(:admin) }  # Assuming you have a factory for admin</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="6">
+          <li class="never" data-hits="" data-linenumber="5">
             
             
 
@@ -10798,24 +11901,35 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
+          <li class="covered" data-hits="1" data-linenumber="6">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    before do</code>
+            <code class="ruby">  before :each do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="7" data-linenumber="7">
+            <span class="hits">7</span>
             
 
             
 
-            <code class="ruby">      sign_in admin  # Sign in the admin user</code>
+            <code class="ruby">    @request.env[&quot;devise.mapping&quot;] = Devise.mappings[:user]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="7" data-linenumber="8">
+            <span class="hits">7</span>
+            
+
+            
+
+            <code class="ruby">    allow(controller).to receive(:authenticate_user!).and_return(true)</code>
           </li>
         </div>
       
@@ -10826,7 +11940,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -10837,95 +11951,95 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="11">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">  let(:buyer) { create(:user, kyc_status: &#39;approved&#39;) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="12">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">  let(:seller) { create(:user, kyc_status: &#39;approved&#39;) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="13">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">  let(:crop) { create(:crop, user: seller, crop_quantity: 10, crop_price: 5) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
             <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
+          <li class="covered" data-hits="8" data-linenumber="15">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">  let(:transaction) { create(:transaction, buyer: buyer, seller: seller) }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    describe &#39;GET #index&#39; do</code>
+            <code class="ruby">  let(:transaction_crop) { create(:transaction_crop, transaction_record: transaction, crop: crop) }</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
+          <li class="covered" data-hits="1" data-linenumber="17">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      it &#39;returns a success response&#39; do</code>
+            <code class="ruby">  before do</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="7" data-linenumber="18">
+            <span class="hits">7</span>
             
 
             
 
-            <code class="ruby">        get :index</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="14">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        expect(controller.current_admin).to eq(admin)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="15">
-            
-            
-
-            
-
-            <code class="ruby">        expect(response).to be_successful</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">      end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
-            
-
-            <code class="ruby">    # before :each do</code>
+            <code class="ruby">    sign_in buyer</code>
           </li>
         </div>
       
@@ -10936,7 +12050,7 @@
 
             
 
-            <code class="ruby">    #     @request.env[&quot;devise.mapping&quot;] = Devise.mappings[:admin]</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -10947,84 +12061,84 @@
 
             
 
-            <code class="ruby">    # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="21">
-            
-            
-
-            
-
-            <code class="ruby">    </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="22">
-            
-            
-
-            
-
-            <code class="ruby"># let(:admin) { create(:admin) } </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
-            
-
-            <code class="ruby">#   let(:user) { create(:user) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="24">
-            
-            
-
-            
-
-            <code class="ruby">#   let(:valid_attributes) { attributes_for(:user) }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="25">
-            
-            
-
-            
-
-            <code class="ruby">#   let(:invalid_attributes) { { email: &#39;invalid&#39; } } # For example</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="26">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
             
+
+            
+
+            <code class="ruby">  describe &#39;POST #create&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">#   before do</code>
+            <code class="ruby">    context &#39;when crop does not exist&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;returns a not found message&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        puts &quot;Debug: Crop ID: #{crop.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        puts &quot;Debug: Crop actually in DB: #{Crop.find_by(id: crop.id).inspect}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        puts &quot;Debug: Transaction ID: #{transaction.id}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        post :create, params: { </code>
           </li>
         </div>
       
@@ -11035,7 +12149,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      user_id: buyer.id, </code>
           </li>
         </div>
       
@@ -11046,7 +12160,7 @@
 
             
 
-            <code class="ruby">#     admin = create(:admin)</code>
+            <code class="ruby">      transaction_id: transaction.id, </code>
           </li>
         </div>
       
@@ -11057,7 +12171,7 @@
 
             
 
-            <code class="ruby">#     sign_in admin # Assuming you are using Devise&#39;s test helpers</code>
+            <code class="ruby">      transaction_crop: { crop_id: -1, quantity: 1 }</code>
           </li>
         </div>
       
@@ -11068,18 +12182,18 @@
 
             
 
-            <code class="ruby">#     puts &quot;Admin signed in: #{admin.inspect}&quot;</code>
+            <code class="ruby">    }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="32">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    </code>
+            
+
+            <code class="ruby">        expect(response.body).to match(/Crop not found/)</code>
           </li>
         </div>
       
@@ -11090,7 +12204,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -11101,7 +12215,7 @@
 
             
 
-            <code class="ruby">#   end</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -11117,24 +12231,24 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="36">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   describe &#39;GET #index&#39; do</code>
+            
+
+            <code class="ruby">    context &#39;when not enough quantity&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="37">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="37">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#      let(:admin) { create(:admin) }  # Assuming you have a factory for admin</code>
+            
+
+            <code class="ruby">      it &#39;returns an error message&#39; do</code>
           </li>
         </div>
       
@@ -11145,29 +12259,29 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">        # post :create, params: { user_id: buyer.id, transaction_id: transaction.id, crop_id: crop.id, quantity: 20 }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="39">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   before do</code>
+            
+
+            <code class="ruby">        puts &quot;Debug: Crop Quantity in DB: #{Crop.find_by(id: crop.id).crop_quantity}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    </code>
+            
+
+            <code class="ruby">        puts &quot;Debug: Transaction actually in DB: #{Transaction.find_by(id: transaction.id).inspect}&quot;</code>
           </li>
         </div>
       
@@ -11178,18 +12292,18 @@
 
             
 
-            <code class="ruby">#     sign_in admin</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="42">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   end</code>
+            
+
+            <code class="ruby">        post :create, params: { </code>
           </li>
         </div>
       
@@ -11200,7 +12314,7 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">          user_id: buyer.id, </code>
           </li>
         </div>
       
@@ -11211,7 +12325,7 @@
 
             
 
-            <code class="ruby">#     it &#39;returns a success response&#39; do</code>
+            <code class="ruby">          transaction_id: transaction.id, </code>
           </li>
         </div>
       
@@ -11222,7 +12336,7 @@
 
             
 
-            <code class="ruby">#       get :index</code>
+            <code class="ruby">          transaction_crop: { transaction_id: transaction.id, crop_id: crop.id, quantity: 20 }</code>
           </li>
         </div>
       
@@ -11233,18 +12347,18 @@
 
             
 
-            <code class="ruby">#       expect(controller.current_admin).to eq(admin)</code>
+            <code class="ruby">        }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="47">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="47">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#       puts &quot;Admin signed in: #{admin.inspect}&quot;</code>
+            
+
+            <code class="ruby">        expect(response.body).to match(/Not enough quantity available/)</code>
           </li>
         </div>
       
@@ -11255,7 +12369,7 @@
 
             
 
-            <code class="ruby">#       puts &quot;Response: #{response.inspect}&quot;</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -11266,7 +12380,7 @@
 
             
 
-            <code class="ruby">#       expect(response).to be_successful</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -11277,29 +12391,29 @@
 
             
 
-            <code class="ruby">#     end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="51">
-            
-            
-
-            
-
-            <code class="ruby">#   end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="52">
-            
-            
-
-            
-
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="51">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    context &#39;when transaction crop is successfully created&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;returns a success message and status code&#39; do</code>
           </li>
         </div>
       
@@ -11310,40 +12424,40 @@
 
             
 
-            <code class="ruby">#   describe &#39;GET #show&#39; do</code>
+            <code class="ruby">        #post :create, params: { user_id: buyer.id, transaction_id: transaction.id, transaction_crop: { transaction_id: transaction.id, crop_id: crop.id, quantity: 5 } }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="54">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     it &#39;returns a success response&#39; do</code>
+            
+
+            <code class="ruby">        puts &quot;Debug: Crop ID from test: #{crop.id}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="55">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="55">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#       get :show, params: { id: user.to_param }</code>
+            
+
+            <code class="ruby">        puts &quot;Debug: Transaction actually successful transaction in DB: #{Transaction.find_by(id: transaction.id).inspect}&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="56">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="56">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#       puts &quot;Show method called with params debug: #{params[:id]}&quot;</code>
+            
+
+            <code class="ruby">        post :create, params: { </code>
           </li>
         </div>
       
@@ -11354,7 +12468,7 @@
 
             
 
-            <code class="ruby">#       expect(response).to be_successful</code>
+            <code class="ruby">          user_id: buyer.id, </code>
           </li>
         </div>
       
@@ -11365,7 +12479,7 @@
 
             
 
-            <code class="ruby">#     end</code>
+            <code class="ruby">          transaction_id: transaction.id, </code>
           </li>
         </div>
       
@@ -11376,7 +12490,7 @@
 
             
 
-            <code class="ruby">#   end</code>
+            <code class="ruby">          transaction_crop: { transaction_id: transaction.id, crop_id: crop.id, quantity: 5 }</code>
           </li>
         </div>
       
@@ -11387,29 +12501,29 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="61">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="61">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   describe &#39;POST #create&#39; do</code>
+            
+
+            <code class="ruby">        expect(response.body).to match(/success/)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="62">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     context &#39;with valid params&#39; do</code>
+            
+
+            <code class="ruby">        expect(response.status).to eq(200)</code>
           </li>
         </div>
       
@@ -11420,7 +12534,7 @@
 
             
 
-            <code class="ruby">#       it &#39;creates a new User&#39; do</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -11431,7 +12545,7 @@
 
             
 
-            <code class="ruby">#         expect {</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -11442,40 +12556,40 @@
 
             
 
-            <code class="ruby">#           post :create, params: { user: valid_attributes }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="66">
-            
-            
-
-            
-
-            <code class="ruby">#         }.to change(User, :count).by(1)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="67">
-            
-            
-
-            
-
-            <code class="ruby">#       end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="68">
-            
-            
-
-            
-
             <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    context &#39;when a pending transaction and transaction crop already exist&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="67">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      it &#39;updates the existing transaction crop instead of creating a new one&#39; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        existing_transaction_crop = create(:transaction_crop, transaction_record: transaction, crop: crop, quantity: 2)</code>
           </li>
         </div>
       
@@ -11486,29 +12600,29 @@
 
             
 
-            <code class="ruby">#       it &#39;renders a JSON response with the new user&#39; do</code>
+            <code class="ruby">        </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="70">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="70">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#         post :create, params: { user: valid_attributes }</code>
+            
+
+            <code class="ruby">        expect {</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="71">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="71">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#         expect(response).to have_http_status(:ok)</code>
+            
+
+            <code class="ruby">          post :create, params: { </code>
           </li>
         </div>
       
@@ -11519,7 +12633,7 @@
 
             
 
-            <code class="ruby">#       end</code>
+            <code class="ruby">            user_id: buyer.id, </code>
           </li>
         </div>
       
@@ -11530,7 +12644,7 @@
 
             
 
-            <code class="ruby">#     end</code>
+            <code class="ruby">            transaction_id: transaction.id, </code>
           </li>
         </div>
       
@@ -11541,7 +12655,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">            transaction_crop: { transaction_id: transaction.id, crop_id: crop.id, quantity: 3 }</code>
           </li>
         </div>
       
@@ -11552,7 +12666,7 @@
 
             
 
-            <code class="ruby">#     context &#39;with invalid params&#39; do</code>
+            <code class="ruby">          }</code>
           </li>
         </div>
       
@@ -11563,7 +12677,7 @@
 
             
 
-            <code class="ruby">#       it &#39;does not create a new User&#39; do</code>
+            <code class="ruby">        }.not_to change(TransactionCrop, :count)</code>
           </li>
         </div>
       
@@ -11574,29 +12688,29 @@
 
             
 
-            <code class="ruby">#         expect {</code>
+            <code class="ruby">        </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="78">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="78">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#           post :create, params: { user: invalid_attributes }</code>
+            
+
+            <code class="ruby">        existing_transaction_crop.reload</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="79">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="79">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#         }.to change(User, :count).by(0)</code>
+            
+
+            <code class="ruby">        expect(existing_transaction_crop.quantity).to eq(5) # 2 original + 3 new</code>
           </li>
         </div>
       
@@ -11607,7 +12721,7 @@
 
             
 
-            <code class="ruby">#       end</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -11618,7 +12732,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -11629,40 +12743,40 @@
 
             
 
-            <code class="ruby">#       it &#39;renders a JSON response with errors for the new user&#39; do</code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="83">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="83">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#         post :create, params: { user: invalid_attributes }</code>
+            
+
+            <code class="ruby">    context &#39;when transaction crop is successfully created or updated&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="84">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="84">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#         expect(response).to have_http_status(:unprocessable_entity)</code>
+            
+
+            <code class="ruby">      it &#39;updates the crop quantity&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="85">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="85">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#       end</code>
+            
+
+            <code class="ruby">        original_crop_quantity = crop.crop_quantity # assuming this is set to some initial value</code>
           </li>
         </div>
       
@@ -11673,18 +12787,18 @@
 
             
 
-            <code class="ruby">#     end</code>
+            <code class="ruby">        </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="87">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="87">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   end</code>
+            
+
+            <code class="ruby">        post :create, params: { </code>
           </li>
         </div>
       
@@ -11695,7 +12809,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">          user_id: buyer.id, </code>
           </li>
         </div>
       
@@ -11706,7 +12820,7 @@
 
             
 
-            <code class="ruby">#   describe &#39;PUT #update&#39; do</code>
+            <code class="ruby">          transaction_id: transaction.id, </code>
           </li>
         </div>
       
@@ -11717,7 +12831,7 @@
 
             
 
-            <code class="ruby">#     context &#39;with valid params&#39; do</code>
+            <code class="ruby">          transaction_crop: { transaction_id: transaction.id, crop_id: crop.id, quantity: 5 }</code>
           </li>
         </div>
       
@@ -11728,7 +12842,7 @@
 
             
 
-            <code class="ruby">#       let(:new_attributes) { { fullName: &#39;Updated Name&#39; } }</code>
+            <code class="ruby">        }</code>
           </li>
         </div>
       
@@ -11739,29 +12853,29 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">        </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="93">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="93">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#       it &#39;updates the requested user&#39; do</code>
+            
+
+            <code class="ruby">        crop.reload</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="94">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="94">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#         put :update, params: { id: user.to_param, user: new_attributes }</code>
+            
+
+            <code class="ruby">        expect(crop.crop_quantity).to eq(original_crop_quantity - 5)</code>
           </li>
         </div>
       
@@ -11772,7 +12886,7 @@
 
             
 
-            <code class="ruby">#         user.reload</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -11783,7 +12897,7 @@
 
             
 
-            <code class="ruby">#         expect(user.fullName).to eq(&#39;Updated Name&#39;)</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -11794,7 +12908,7 @@
 
             
 
-            <code class="ruby">#       end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -11805,29 +12919,29 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="99">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="99">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#       it &#39;renders a JSON response with the updated user&#39; do</code>
+            
+
+            <code class="ruby">  describe &#39;PATCH #update&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="100">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="100">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">#         put :update, params: { id: user.to_param, user: valid_attributes }</code>
+            
+
+            <code class="ruby">    let(:transaction_crop) { create(:transaction_crop, transaction_record: transaction, crop: crop) }</code>
           </li>
         </div>
       
@@ -11838,29 +12952,29 @@
 
             
 
-            <code class="ruby">#         expect(response).to have_http_status(:ok)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="102">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="102">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#       end</code>
+            
+
+            <code class="ruby">    it &#39;updates the transaction crop&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="103">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="103">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     end</code>
+            
+
+            <code class="ruby">      puts &quot;Debug: Transaction Crop ID: #{transaction_crop.id}&quot;</code>
           </li>
         </div>
       
@@ -11871,18 +12985,18 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">      #patch :update, params: { user_id: buyer.id, transaction_id: transaction.id, id: transaction_crop.id, quantity: 2 }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="105">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="105">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     context &#39;with invalid params&#39; do</code>
+            
+
+            <code class="ruby">      patch :update, params: { </code>
           </li>
         </div>
       
@@ -11893,7 +13007,7 @@
 
             
 
-            <code class="ruby">#       it &#39;renders a JSON response with errors for the user&#39; do</code>
+            <code class="ruby">        user_id: buyer.id, </code>
           </li>
         </div>
       
@@ -11904,7 +13018,7 @@
 
             
 
-            <code class="ruby">#         put :update, params: { id: user.to_param, user: invalid_attributes }</code>
+            <code class="ruby">        transaction_id: transaction.id, </code>
           </li>
         </div>
       
@@ -11915,7 +13029,7 @@
 
             
 
-            <code class="ruby">#         expect(response).to have_http_status(:unprocessable_entity)</code>
+            <code class="ruby">        id: transaction_crop.id, </code>
           </li>
         </div>
       
@@ -11926,7 +13040,7 @@
 
             
 
-            <code class="ruby">#       end</code>
+            <code class="ruby">        transaction_crop: { transaction_id: transaction.id, crop_id: crop.id, quantity: 2 }</code>
           </li>
         </div>
       
@@ -11937,29 +13051,29 @@
 
             
 
-            <code class="ruby">#     end</code>
+            <code class="ruby">      }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="111">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="111">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#   end</code>
+            
+
+            <code class="ruby">      expect(response.body).to match(/success/)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="112">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="112">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  </code>
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
           </li>
         </div>
       
@@ -11970,7 +13084,7 @@
 
             
 
-            <code class="ruby">#   describe &#39;DELETE #destroy&#39; do</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -11981,7 +13095,7 @@
 
             
 
-            <code class="ruby">#     it &#39;destroys the requested user&#39; do</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -11992,29 +13106,29 @@
 
             
 
-            <code class="ruby">#       user = create(:user)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="116">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="116">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#       expect {</code>
+            
+
+            <code class="ruby">  describe &#39;DELETE #destroy&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="117">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="117">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">#         delete :destroy, params: { id: user.to_param }</code>
+            
+
+            <code class="ruby">    let(:transaction_crop) { create(:transaction_crop, transaction_record: transaction, crop: crop) }</code>
           </li>
         </div>
       
@@ -12025,51 +13139,51 @@
 
             
 
-            <code class="ruby">#       }.to change(User, :count).by(0)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="119">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="119">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     end</code>
+            
+
+            <code class="ruby">    it &#39;deletes the transaction crop&#39; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="120">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="120">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">  </code>
+            
+
+            <code class="ruby">      delete :destroy, params: { user_id: buyer.id, transaction_id: transaction.id, id: transaction_crop.id }</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="121">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="121">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#     it &#39;renders a JSON response with the deleted user&#39; do</code>
+            
+
+            <code class="ruby">      expect(response.body).to match(/success/)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="122">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="122">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">#       user = create(:user)</code>
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
           </li>
         </div>
       
@@ -12080,7 +13194,7 @@
 
             
 
-            <code class="ruby">#       delete :destroy, params: { id: user.to_param }</code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
@@ -12091,45 +13205,12 @@
 
             
 
-            <code class="ruby">#       expect(response).to have_http_status(:ok)</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
           <li class="never" data-hits="" data-linenumber="125">
-            
-            
-
-            
-
-            <code class="ruby">#     end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="126">
-            
-            
-
-            
-
-            <code class="ruby">#   end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="127">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="128">
             
             
 
@@ -12215,8 +13296,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="5">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
             
 
             
@@ -12226,8 +13307,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="6">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
             
 
             
@@ -12378,8 +13459,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="8" data-linenumber="3">
+            <span class="hits">8</span>
             
 
             
@@ -12400,8 +13481,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="8" data-linenumber="5">
+            <span class="hits">8</span>
             
 
             
@@ -12411,8 +13492,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="8" data-linenumber="6">
+            <span class="hits">8</span>
             
 
             
@@ -12485,8 +13566,8 @@
   <div class="header">
     <h3>spec/factories/transaction_crops.rb</h3>
     <h4>
-      <span class="yellow">
-  85.71%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -12496,8 +13577,8 @@
 
     <div class="t-line-summary">
       <b>7</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -12530,8 +13611,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="3">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="3" data-linenumber="3">
+            <span class="hits">3</span>
             
 
             
@@ -12585,8 +13666,8 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="8">
-            
+          <li class="covered" data-hits="3" data-linenumber="8">
+            <span class="hits">3</span>
             
 
             
@@ -12715,8 +13796,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="8" data-linenumber="6">
+            <span class="hits">8</span>
             
 
             
@@ -12823,8 +13904,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="5">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="5">
+            <span class="hits">15</span>
             
 
             
@@ -12834,8 +13915,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="6">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="6">
+            <span class="hits">15</span>
             
 
             
@@ -12845,8 +13926,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="7">
+            <span class="hits">15</span>
             
 
             
@@ -12856,8 +13937,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="8">
+            <span class="hits">15</span>
             
 
             
@@ -12867,8 +13948,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="9">
+            <span class="hits">15</span>
             
 
             
@@ -12878,8 +13959,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="10">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="10">
+            <span class="hits">15</span>
             
 
             
@@ -12889,8 +13970,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="11">
+            <span class="hits">15</span>
             
 
             
@@ -12900,8 +13981,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="12">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="12">
+            <span class="hits">15</span>
             
 
             
@@ -12911,8 +13992,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="13">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="13">
+            <span class="hits">15</span>
             
 
             
@@ -12922,8 +14003,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="14">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="14">
+            <span class="hits">15</span>
             
 
             
@@ -12933,8 +14014,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="15" data-linenumber="15">
+            <span class="hits">15</span>
             
 
             
