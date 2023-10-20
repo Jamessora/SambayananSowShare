@@ -8,6 +8,7 @@ class Users::PasswordsController < Devise::PasswordsController
     token = params[:token]
     Rails.logger.debug "New action triggered. Token received: #{token}"
     user = User.find_by(initial_password_token: token)
+    Rails.logger.info("Debugging user: #{user.inspect}")
     Rails.logger.debug "Database token: #{user.initial_password_token}, Param token: #{token}"
     Rails.logger.debug "Database token timestamp: #{user.initial_password_token_sent_at}, Current Time: #{Time.now}"
     if user && user.initial_password_token_sent_at > 2.hours.ago

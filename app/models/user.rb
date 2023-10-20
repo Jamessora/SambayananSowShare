@@ -72,7 +72,9 @@ def self.from_omniauth(auth, send_email: false)
       UserMailer.set_initial_password_email(user).deliver_now if send_email
       Rails.logger.debug "User saved: #{user.errors.full_messages}"
     else
-      Rails.logger.debug "User not saved: #{user.errors.full_messages.join(', ')}"
+      Rails.logger.debug "User is a new record not saved: #{user.errors.full_messages.join(', ')}"
+      Rails.logger.debug "User Errors: #{user.errors.full_messages.join(', ')}"
+
     end
   end
 
@@ -81,7 +83,7 @@ def self.from_omniauth(auth, send_email: false)
 end
 
 def kyc_required?
-  return false if skip_kyc_validation
+  return false if skip_kyc_validation == true
   kyc_status != 'approved'
 end
     
@@ -113,6 +115,8 @@ end
   end
 
   def acceptable_image
+    Rails.logger.debug "Debugging acceptable_image method"
+  
     return unless idPhoto.attached?
 
     unless idPhoto.blob.byte_size <= 1.megabyte

@@ -9,11 +9,11 @@ class Admin::ConfirmationsController < Devise::ConfirmationsController
       if resource.errors.empty?
         
         # Redirect to React frontend with success status
-        redirect_to "http://localhost:5173/confirmation-success?status=success",  allow_other_host: true
+        redirect_to "https://sambayanansowsharefe.onrender.com/confirmation-success?status=success",  allow_other_host: true
       else
         # Redirect to React frontend with failure status
         puts "Debugging: Resource errors: #{resource.errors.full_messages}"
-        redirect_to "http://localhost:5173/confirmation-success?status=failure",  allow_other_host: true
+        redirect_to "https://sambayanansowsharefe.onrender.com/confirmation-success?status=failure",  allow_other_host: true
       end
     end
   
