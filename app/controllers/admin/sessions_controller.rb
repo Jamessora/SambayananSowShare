@@ -9,6 +9,7 @@ class Admin::SessionsController < Devise::SessionsController
  
   # POST /resource/sign_in
   def create
+    Rails.logger.debug "Current Admin: #{current_admin.inspect}"
     Rails.logger.debug "Parameters: #{params.inspect}"
     admin = find_admin_by_email
     Rails.logger.debug "Email: #{params.dig(:admin, :email)}"
@@ -37,21 +38,21 @@ class Admin::SessionsController < Devise::SessionsController
 
   protected
 
-  # def require_no_authentication
-  #   if request.format.json?
-  #     assert_is_devise_resource!
-  #     authenticated = warden.authenticated?(resource_name)
+   def require_no_authentication
+    if request.format.json?
+       assert_is_devise_resource!
+       authenticated = warden.authenticated?(resource_name)
   
-  #     if authenticated && resource = warden.user(resource_name)
-  #       #render json: { message: 'You are already signed in.', admin: resource }, status: :ok
-  #       render_successful_login
-  #       Rails.logger.info("Login success")
-  #       return
-  #     end
-  #   else
-  #     super
-  #   end
-  # end
+       if authenticated && resource = warden.user(resource_name)
+         
+         render_successful_login and return
+         Rails.logger.info("Login success")
+         return
+       end
+    else
+       super
+     end
+   end
   
   private
   
