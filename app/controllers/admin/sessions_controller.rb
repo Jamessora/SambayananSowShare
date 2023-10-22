@@ -74,7 +74,7 @@ class Admin::SessionsController < Devise::SessionsController
   
   def render_successful_login
     payload = { admin_id: current_admin.id }
-    secret = Rails.application.secrets.secret_key_base
+    secret = Rails.application.credentials.secret_key_base
     token = JWT.encode(payload, secret, 'HS256')
 
     render json: {

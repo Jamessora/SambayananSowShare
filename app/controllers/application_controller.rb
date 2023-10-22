@@ -30,6 +30,7 @@ class ApplicationController < ActionController::API
     def authenticate_admin!
       token = request.headers['Authorization'].split(' ').last
       Rails.logger.debug "Received token: #{token}"
+      Rails.logger.info "Received token: #{token}"
       decoded_token = decoded_jwt(token)
       Rails.logger.debug "Decoded token: #{decoded_token}"
       
@@ -43,7 +44,8 @@ class ApplicationController < ActionController::API
 
     
     def decoded_jwt(token)
-    decoded_token = JWT.decode(token, Rails.application.secrets.secret_key_base, true, { algorithm: 'HS256' })
+    decoded_token = JWT.decode(token, Rails.application.credentials.secret_key_base, true, { algorithm: 'HS256' })
+                                      
     decoded_token.first # Return the payload
     rescue JWT::DecodeError => e
     Rails.logger.error "JWT Decode Error: #{e.message}"

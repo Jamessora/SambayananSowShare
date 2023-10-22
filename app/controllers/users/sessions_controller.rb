@@ -121,7 +121,7 @@ class Users::SessionsController < Devise::SessionsController
 
   
   def decoded_jwt(token)
-    decoded_token = JWT.decode(token, Rails.application.secrets.secret_key_base, true, { algorithm: 'HS256' })
+    decoded_token = JWT.decode(token, Rails.application.credentials.secret_key_base, true, { algorithm: 'HS256' })
     decoded_token.first # Return the payload
   rescue JWT::DecodeError => e
     Rails.logger.error "JWT Decode Error: #{e.message}"

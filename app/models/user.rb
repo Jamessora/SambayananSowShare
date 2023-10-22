@@ -90,7 +90,7 @@ end
   end
 
   def generate_jwt
-    JWT.encode({ id: id, exp: 24.hours.from_now.to_i }, Rails.application.secrets.secret_key_base)
+    JWT.encode({ id: id, exp: 24.hours.from_now.to_i }, Rails.application.credentials.secret_key_base)
   end
 
   # def generate_initial_password_token!
