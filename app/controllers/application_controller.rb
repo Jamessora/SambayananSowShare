@@ -9,6 +9,7 @@ class ApplicationController < ActionController::API
     before_action :authenticate_user!, if: :user_controller?
 
     def authenticate_user!
+      Rails.logger.debug "Headers: #{request.headers.inspect}"
         token = request.headers['Authorization'].split(' ').last
         Rails.logger.debug "Received token: #{token}"
         

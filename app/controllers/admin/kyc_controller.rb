@@ -3,6 +3,7 @@ class Admin::KycController < ApplicationController
   before_action :authenticate_admin!
   
   def index
+    Rails.logger.debug "Current Admin: #{current_admin.inspect}"
     users_with_pending_kyc = User.where(kyc_status: 'pending').with_attached_idPhoto
     response_data = users_with_pending_kyc.map do |user|
       user_data = {
