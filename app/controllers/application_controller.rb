@@ -27,6 +27,21 @@ class ApplicationController < ActionController::API
         end
     end
 
+    def authenticate_admin!
+      token = request.headers['Authorization'].split(' ').last
+      Rails.logger.debug "Received token: #{token}"
+      decoded_token = decoded_jwt(token)
+      Rails.logger.debug "Decoded token: #{decoded_token}"
+      
+      if decoded_token && Admin.find_by(id: decoded_token["admin_id"])
+        Rails.logger.debug "Admin Authorized"
+      else
+        render json: { error: 'Unauthorized' }, status: 401
+        Rails.logger.debug "Admin NOT Authorized"
+      end
+    end
+
+    
     def decoded_jwt(token)
     decoded_token = JWT.decode(token, Rails.application.secrets.secret_key_base, true, { algorithm: 'HS256' })
     decoded_token.first # Return the payload
