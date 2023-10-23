@@ -15,7 +15,7 @@ class Users::SessionsController < Devise::SessionsController
   def create
     user = nil
     puts "SessionsController#create: #{params.inspect}"
-      # Your login logic here
+      # login logic 
       if params[:id_token]
       id_token = params[:id_token]
       validator = GoogleIDToken::Validator.new
@@ -79,10 +79,10 @@ class Users::SessionsController < Devise::SessionsController
   # end
 
   # def destroy
-  #   # You've already authenticated the user and set @current_user in ApplicationController
+  #   
   #   if @current_user
-  #     # Assuming your decoded_jwt method sets a 'jti' field in the decoded token
-  #     # Revoke JWT Token here (if using a revocation strategy)
+  #     # Decoded_jwt method sets a 'jti' field in the decoded token
+  #     # Revoke JWT Token here (using a revocation strategy)
   #     jti = decoded_jwt(request.headers['Authorization'].split(' ').last)['jti']
   #     JwtDenylist.create(jti: jti) if jti
       

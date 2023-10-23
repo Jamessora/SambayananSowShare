@@ -10,7 +10,9 @@ class Admin::SessionsController < Devise::SessionsController
   # POST /resource/sign_in
   def create
     Rails.logger.debug "Current Admin: #{current_admin.inspect}"
+    Rails.logger.info "Current Admin: #{current_admin.inspect}"
     Rails.logger.debug "Parameters: #{params.inspect}"
+    Rails.logger.info "Parameters: #{params.inspect}"
     admin = find_admin_by_email
     Rails.logger.debug "Email: #{params.dig(:admin, :email)}"
     Rails.logger.debug "Password: #{params.dig(:admin, :password)}"

@@ -75,7 +75,7 @@ class Admin::UsersController < ApplicationController
       def create
         puts "Debugging Params: #{params.inspect}"
         puts "Params: #{params}"
-        puts "New User: #{User.new(params)}"
+        puts "New User: #{User.new(user_params)}"
 
         begin
         @user = User.new(user_params)

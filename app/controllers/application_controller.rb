@@ -13,14 +13,14 @@ class ApplicationController < ActionController::API
         token = request.headers['Authorization'].split(' ').last
         Rails.logger.debug "Received token: #{token}"
         
-        # Your existing logic to decode and validate token
-        decoded_token = decoded_jwt(token) # Assuming decode_token is a method you have
-        @current_user = User.find(decoded_token["id"])
+        # Logic to decode and validate token
+        decoded_token = decoded_jwt(token)
+        if decoded_token && decoded_token["id"]
+          @current_user = User.find(decoded_token["id"])
+          Rails.logger.debug "Authenticated User: #{current_user.inspect}"
         Rails.logger.debug "Decoded token: #{decoded_token}"
         Rails.logger.debug "Decoded token: #{@current_user}"
-        Rails.logger.debug "Authenticated User: #{current_user.inspect}"
-        if decoded_token
-          # Authentication successful
+       
         else
           Rails.logger.debug "Authentication failed"
           render json: { error: 'Unauthorized' }, status: 401

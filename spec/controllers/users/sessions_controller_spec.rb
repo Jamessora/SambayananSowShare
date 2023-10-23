@@ -55,9 +55,10 @@ RSpec.describe Users::SessionsController, type: :controller do
   
       delete :destroy
   
-      decoded_token = JWT.decode(token, Rails.application.secrets.secret_key_base, true, { algorithm: 'HS256' }).first
+      decoded_token = JWT.decode(token, Rails.application.credentials.secret_key_base, true, { algorithm: 'HS256' }).first
       expect(JwtDenylist.where(jti: decoded_token['jti']).exists?).to be_truthy
       expect(subject.current_user).to be_nil
+      
     end
   
     it 'returns a successful logout message' do

@@ -5,18 +5,6 @@ class Users::TransactionsController < ApplicationController
     before_action :check_kyc_status
     before_action :set_user
     
-    # def index
-    #   # Fetch transactions where the current user is the seller and status is not 'Pending'
-    #   transactions = Transaction.where(seller_id: current_user.id)
-    #                            .where.not(status: 'Pending')
-    #                            .joins(transaction_crops: :crop)  # Join with TransactionCrops and Crops
-  
-    #   # You can also include transaction crops and crops in the query result if you want
-    #   transactions = transactions.includes(transaction_crops: :crop)
-  
-    #   # Render the result (assuming you have a JSON serializer setup)
-    #   render json: transactions, include: { transaction_crops: { include: :crop } },status: :ok
-    # end
 
     def index
       role = params[:role] || 'seller'  # Default to 'seller' if role is not specified
@@ -86,7 +74,7 @@ class Users::TransactionsController < ApplicationController
       @transaction = Transaction.find_by(id: params[:id])
       Rails.logger.debug "Fetched Transaction: #{@transaction.inspect}"
       if @transaction.nil?
-        render json: { status: 'error', message: 'Transaction not found' } and return
+        render json: { status: 'error', message: 'Transaction not found' }, status: :not_found and return
       end
     
       new_status = params[:status]

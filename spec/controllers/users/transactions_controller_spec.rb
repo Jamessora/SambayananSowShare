@@ -18,6 +18,31 @@ RSpec.describe Users::TransactionsController, type: :controller do
     sign_in buyer
   end
 
+  describe 'GET #index' do
+    context 'when role is seller' do
+      it 'returns transactions where the current user is the seller' do
+        get :index, params: { user_id: buyer.id, role: 'seller' }
+        expect(response).to have_http_status(:ok)
+        
+      end
+    end
+
+    context 'when role is buyer' do
+      it 'returns transactions where the current user is the buyer' do
+        get :index, params: { user_id: buyer.id, role: 'buyer' }
+        expect(response).to have_http_status(:ok)
+        
+      end
+    end
+
+    context 'when role is invalid' do
+      it 'returns a bad request status' do
+        get :index, params: { user_id: buyer.id, role: 'invalid_role' }
+        expect(response).to have_http_status(:bad_request)
+      end
+    end
+  end
+
   describe 'POST #create' do
     context 'when kyc_status is approved' do
       before { buyer.update(kyc_status: 'approved') }
@@ -47,6 +72,15 @@ RSpec.describe Users::TransactionsController, type: :controller do
         expect(Transaction.count).to eq(0)
       end
     end
+
+    context 'when crop is not found' do
+      it 'returns an error' do
+        post :create, params: { user_id: buyer.id, crop_id: 'non_existent_crop_id' }
+        expect(response).to have_http_status(:ok) # or whatever your app returns for this case
+        expect(JSON.parse(response.body)['status']).to eq('error')
+      end
+    end
+    
   end
 
 
@@ -98,6 +132,56 @@ RSpec.describe Users::TransactionsController, type: :controller do
         put :update, params: { user_id: buyer.id, id: transaction.id, status: 'For Seller Confirmation' }
         transaction.reload
         expect(transaction.total_price).to_not eq(300) # Assuming initial total_price was not 300
+      end
+    end
+
+    context 'when transaction ID is valid' do
+      it 'updates the transaction status' do
+        put :update, params: { user_id: buyer.id, id: transaction.id, status: 'For Seller Confirmation' }
+        transaction.reload
+        expect(transaction.status).to eq('For Seller Confirmation')
+        expect(response).to have_http_status(:ok)
+      end
+  
+      it 'returns an error for an invalid status' do
+        put :update, params: { user_id: buyer.id, id: transaction.id, status: 'Invalid Status' }
+        expect(response).to have_http_status(:bad_request)
+      end
+    end
+  
+    context 'when transaction ID is invalid' do
+      it 'returns a not found status' do
+        put :update, params: { user_id: buyer.id, id: 'invalid_transaction_id', status: 'For Seller Confirmation' }
+        expect(response).to have_http_status(:not_found)
+      end
+    end
+  
+    context 'when update fails' do
+      before do
+        allow_any_instance_of(Transaction).to receive(:update).and_return(false)
+      end
+  
+      it 'returns an unprocessable entity status' do
+        put :update, params: { user_id: buyer.id, id: transaction.id, status: 'For Seller Confirmation' }
+        expect(response).to have_http_status(:unprocessable_entity)
+      end
+    end
+  end
+    describe 'GET #show' do
+    let(:transaction) { create(:transaction, buyer: buyer, seller: seller) }
+
+    context 'when transaction ID is valid' do
+      it 'returns the transaction' do
+        get :show, params: { user_id: buyer.id, id: transaction.id }
+        expect(response).to have_http_status(:ok)
+        # Add more expectations here to check the returned JSON
+      end
+    end
+
+    context 'when transaction ID is invalid' do
+      it 'returns a not found status' do
+        get :show, params: { user_id: buyer.id, id: 'invalid_transaction_id'}
+        expect(response).to have_http_status(:not_found)
       end
     end
   end
