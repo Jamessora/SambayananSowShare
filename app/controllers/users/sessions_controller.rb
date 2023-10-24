@@ -33,8 +33,20 @@ class Users::SessionsController < Devise::SessionsController
         Rails.logger.debug "User before generating JWT: #{user.inspect}"
         token = user.generate_jwt
         # Respond with the token and user id
-        render json: { success: true, jwt: token, user_id: user.id, email: user.email }
-      else
+        render json: { success: true, jwt: token, user_id: user.id, email: user.email, kyc_status: user.kyc_status, 
+        user: {
+          id: user.id,
+          email: user.email,
+          fullName: user.fullName,
+          
+            country: user.address_country,
+            city: user.address_city,
+            street: user.address_street
+          
+        }
+      }
+
+        else
         render json: { success: false, error: 'Authentication failed' }
       end
 

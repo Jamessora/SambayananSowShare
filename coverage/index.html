@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-23T18:39:57+08:00">2023-10-23T18:39:57+08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-10-24T19:33:31+08:00">2023-10-24T19:33:31+08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -139,7 +139,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ca1f312b88bcce76e6ff069da60b858cfdcfc198" class="src_link" title="app/controllers/users/sessions_controller.rb">app/controllers/users/sessions_controller.rb</a></td>
             <td class="red strong cell--number t-file__coverage">73.81 %</td>
-            <td class="cell--number">131</td>
+            <td class="cell--number">143</td>
             <td class="cell--number">42</td>
             <td class="cell--number">31</td>
             <td class="cell--number">11</td>
@@ -6191,7 +6191,7 @@
 
             
 
-            <code class="ruby">        render json: { success: true, jwt: token, user_id: user.id, email: user.email }</code>
+            <code class="ruby">        render json: { success: true, jwt: token, user_id: user.id, email: user.email, kyc_status: user.kyc_status, </code>
           </li>
         </div>
       
@@ -6202,18 +6202,18 @@
 
             
 
-            <code class="ruby">      else</code>
+            <code class="ruby">        user: {</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="38">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="38">
+            
             
 
             
 
-            <code class="ruby">        render json: { success: false, error: &#39;Authentication failed&#39; }</code>
+            <code class="ruby">          id: user.id,</code>
           </li>
         </div>
       
@@ -6224,7 +6224,7 @@
 
             
 
-            <code class="ruby">      end</code>
+            <code class="ruby">          email: user.email,</code>
           </li>
         </div>
       
@@ -6235,7 +6235,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">          fullName: user.fullName,</code>
           </li>
         </div>
       
@@ -6246,18 +6246,18 @@
 
             
 
-            <code class="ruby">    rescue GoogleIDToken::ValidationError =&gt; e</code>
+            <code class="ruby">          address: {</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="42">
+          <li class="never" data-hits="" data-linenumber="42">
             
             
 
             
 
-            <code class="ruby">      render json: { success: false, error: e.message }</code>
+            <code class="ruby">            country: user.address_country,</code>
           </li>
         </div>
       
@@ -6268,7 +6268,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">            city: user.address_city,</code>
           </li>
         </div>
       
@@ -6279,7 +6279,7 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">            street: user.address_street</code>
           </li>
         </div>
       
@@ -6290,7 +6290,7 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">          }, </code>
           </li>
         </div>
       
@@ -6301,7 +6301,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        }</code>
           </li>
         </div>
       
@@ -6312,7 +6312,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      }</code>
           </li>
         </div>
       
@@ -6323,7 +6323,7 @@
 
             
 
-            <code class="ruby"> </code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -6334,7 +6334,7 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">        else</code>
           </li>
         </div>
       
@@ -6345,18 +6345,18 @@
 
             
 
-            <code class="ruby">  def after_sign_out_path_for(_resource_or_scope)</code>
+            <code class="ruby">        render json: { success: false, error: &#39;Authentication failed&#39; }</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="51">
+          <li class="never" data-hits="" data-linenumber="51">
             
             
 
             
 
-            <code class="ruby">    new_user_session_path</code>
+            <code class="ruby">      end</code>
           </li>
         </div>
       
@@ -6367,7 +6367,7 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -6378,595 +6378,23 @@
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">    rescue GoogleIDToken::ValidationError =&gt; e</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="54">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="54">
+            
             
 
             
 
-            <code class="ruby">  def after_sign_in_path_for(resource_or_scope)</code>
+            <code class="ruby">      render json: { success: false, error: e.message }</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="55">
-            
-            
-
-            
-
-            <code class="ruby">    stored_location_for(resource_or_scope) || root_path</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="56">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="57">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="58">
-            
-            
-
-            
-
-            <code class="ruby">  # def destroy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="59">
-            
-            
-
-            
-
-            <code class="ruby">  #   sign_out current_user</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="60">
-            
-            
-
-            
-
-            <code class="ruby">  #   JwtDenylist.create(jti: decoded_jwt[&#39;jti&#39;]) if decoded_jwt</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="61">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="62">
-            
-            
-
-            
-
-            <code class="ruby">   </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="63">
-            
-            
-
-            
-
-            <code class="ruby">  #   render json: { success: true, message: &#39;Logged out successfully&#39; }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="64">
-            
-            
-
-            
-
-            <code class="ruby">  #   status: :ok</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="65">
-            
-            
-
-            
-
-            <code class="ruby">  # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="66">
-            
-            
-
-            
-
-            <code class="ruby">#working spec</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="67">
-            
-            
-
-            
-
-            <code class="ruby">  # def destroy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="68">
-            
-            
-
-            
-
-            <code class="ruby">  # token = request.headers[&#39;Authorization&#39;].split(&#39; &#39;).last</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="69">
-            
-            
-
-            
-
-            <code class="ruby">  # decoded_token = decoded_jwt(token)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="70">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="71">
-            
-            
-
-            
-
-            <code class="ruby">  # # Revoke JWT Token here (if using a revocation strategy)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="72">
-            
-            
-
-            
-
-            <code class="ruby">  # JwtDenylist.create(jti: decoded_token[&#39;jti&#39;]) if decoded_token</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="73">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="74">
-            
-            
-
-            
-
-            <code class="ruby">  # # Sign out the user</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="75">
-            
-            
-
-            
-
-            <code class="ruby">  # sign_out current_user</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="76">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="77">
-            
-            
-
-            
-
-            <code class="ruby">  # # Send a success response</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="78">
-            
-            
-
-            
-
-            <code class="ruby">  # render json: {message: &#39;You have logged out successfully.&#39;}, status: :ok</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="79">
-            
-            
-
-            
-
-            <code class="ruby">  # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="80">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="81">
-            
-            
-
-            
-
-            <code class="ruby">  # def destroy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="82">
-            
-            
-
-            
-
-            <code class="ruby">  #   </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="83">
-            
-            
-
-            
-
-            <code class="ruby">  #   if @current_user</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="84">
-            
-            
-
-            
-
-            <code class="ruby">  #     # Decoded_jwt method sets a &#39;jti&#39; field in the decoded token</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="85">
-            
-            
-
-            
-
-            <code class="ruby">  #     # Revoke JWT Token here (using a revocation strategy)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="86">
-            
-            
-
-            
-
-            <code class="ruby">  #     jti = decoded_jwt(request.headers[&#39;Authorization&#39;].split(&#39; &#39;).last)[&#39;jti&#39;]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="87">
-            
-            
-
-            
-
-            <code class="ruby">  #     JwtDenylist.create(jti: jti) if jti</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="88">
-            
-            
-
-            
-
-            <code class="ruby">      </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="89">
-            
-            
-
-            
-
-            <code class="ruby">  #     # Sign out the user</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="90">
-            
-            
-
-            
-
-            <code class="ruby">  #     sign_out @current_user</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="91">
-            
-            
-
-            
-
-            <code class="ruby">      </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="92">
-            
-            
-
-            
-
-            <code class="ruby">  #     # Send a success response</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="93">
-            
-            
-
-            
-
-            <code class="ruby">  #     render json: { message: &#39;You have logged out successfully.&#39; }, status: :ok</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="94">
-            
-            
-
-            
-
-            <code class="ruby">  #   else</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="95">
-            
-            
-
-            
-
-            <code class="ruby">  #     render json: { error: &#39;Unauthorized&#39; }, status: :unauthorized</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="96">
-            
-            
-
-            
-
-            <code class="ruby">  #   end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="97">
-            
-            
-
-            
-
-            <code class="ruby">  # end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="98">
-            
-            
-
-            
-
-            <code class="ruby">  </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="99">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def destroy</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="100">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    token = request.headers[&#39;Authorization&#39;].split(&#39; &#39;).last</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="101">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    decoded_token = decoded_jwt(token)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="102">
-            
-            
-
-            
-
-            <code class="ruby">    </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="103">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="104">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    if decoded_token.nil?</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="105">
-            
-            
-
-            
-
-            <code class="ruby">      render json: { error: &#39;Invalid token&#39; }, status: :unauthorized</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="106">
-            
-            
-
-            
-
-            <code class="ruby">      return</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="107">
+          <li class="never" data-hits="" data-linenumber="55">
             
             
 
@@ -6977,24 +6405,596 @@
         </div>
       
         <div>
+          <li class="never" data-hits="" data-linenumber="56">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby"> </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def after_sign_out_path_for(_resource_or_scope)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="63">
+            
+            
+
+            
+
+            <code class="ruby">    new_user_session_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="64">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="65">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def after_sign_in_path_for(resource_or_scope)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby">    stored_location_for(resource_or_scope) || root_path</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="68">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="70">
+            
+            
+
+            
+
+            <code class="ruby">  # def destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby">  #   sign_out current_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby">  #   JwtDenylist.create(jti: decoded_jwt[&#39;jti&#39;]) if decoded_jwt</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="73">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="74">
+            
+            
+
+            
+
+            <code class="ruby">   </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="75">
+            
+            
+
+            
+
+            <code class="ruby">  #   render json: { success: true, message: &#39;Logged out successfully&#39; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="76">
+            
+            
+
+            
+
+            <code class="ruby">  #   status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="77">
+            
+            
+
+            
+
+            <code class="ruby">  # end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="78">
+            
+            
+
+            
+
+            <code class="ruby">#working spec</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="79">
+            
+            
+
+            
+
+            <code class="ruby">  # def destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">  # token = request.headers[&#39;Authorization&#39;].split(&#39; &#39;).last</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby">  # decoded_token = decoded_jwt(token)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="82">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="83">
+            
+            
+
+            
+
+            <code class="ruby">  # # Revoke JWT Token here (if using a revocation strategy)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="84">
+            
+            
+
+            
+
+            <code class="ruby">  # JwtDenylist.create(jti: decoded_token[&#39;jti&#39;]) if decoded_token</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="85">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="86">
+            
+            
+
+            
+
+            <code class="ruby">  # # Sign out the user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="87">
+            
+            
+
+            
+
+            <code class="ruby">  # sign_out current_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="88">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="89">
+            
+            
+
+            
+
+            <code class="ruby">  # # Send a success response</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="90">
+            
+            
+
+            
+
+            <code class="ruby">  # render json: {message: &#39;You have logged out successfully.&#39;}, status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="91">
+            
+            
+
+            
+
+            <code class="ruby">  # end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="92">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="93">
+            
+            
+
+            
+
+            <code class="ruby">  # def destroy</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="94">
+            
+            
+
+            
+
+            <code class="ruby">  #   </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="95">
+            
+            
+
+            
+
+            <code class="ruby">  #   if @current_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="96">
+            
+            
+
+            
+
+            <code class="ruby">  #     # Decoded_jwt method sets a &#39;jti&#39; field in the decoded token</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="97">
+            
+            
+
+            
+
+            <code class="ruby">  #     # Revoke JWT Token here (using a revocation strategy)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="98">
+            
+            
+
+            
+
+            <code class="ruby">  #     jti = decoded_jwt(request.headers[&#39;Authorization&#39;].split(&#39; &#39;).last)[&#39;jti&#39;]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="99">
+            
+            
+
+            
+
+            <code class="ruby">  #     JwtDenylist.create(jti: jti) if jti</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="100">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="101">
+            
+            
+
+            
+
+            <code class="ruby">  #     # Sign out the user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="102">
+            
+            
+
+            
+
+            <code class="ruby">  #     sign_out @current_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="103">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="104">
+            
+            
+
+            
+
+            <code class="ruby">  #     # Send a success response</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="105">
+            
+            
+
+            
+
+            <code class="ruby">  #     render json: { message: &#39;You have logged out successfully.&#39; }, status: :ok</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="106">
+            
+            
+
+            
+
+            <code class="ruby">  #   else</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="107">
+            
+            
+
+            
+
+            <code class="ruby">  #     render json: { error: &#39;Unauthorized&#39; }, status: :unauthorized</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="never" data-hits="" data-linenumber="108">
             
             
 
             
 
-            <code class="ruby">    # Revoke JWT Token here (if using a revocation strategy)</code>
+            <code class="ruby">  #   end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="109">
-            <span class="hits">3</span>
+          <li class="never" data-hits="" data-linenumber="109">
+            
             
 
             
 
-            <code class="ruby">    JwtDenylist.create(jti: decoded_token[&#39;jti&#39;]) if decoded_token &amp;&amp; !JwtDenylist.where(jti: decoded_token[&#39;jti&#39;]).exists?</code>
+            <code class="ruby">  # end</code>
           </li>
         </div>
       
@@ -7005,18 +7005,18 @@
 
             
 
-            <code class="ruby">    </code>
+            <code class="ruby">  </code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="111">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="111">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    # Sign out the user</code>
+            
+
+            <code class="ruby">  def destroy</code>
           </li>
         </div>
       
@@ -7027,7 +7027,7 @@
 
             
 
-            <code class="ruby">    sign_out current_user</code>
+            <code class="ruby">    token = request.headers[&#39;Authorization&#39;].split(&#39; &#39;).last</code>
           </li>
         </div>
       
@@ -7038,7 +7038,7 @@
 
             
 
-            <code class="ruby">    Rails.logger.debug &quot;Signingout user&quot; </code>
+            <code class="ruby">    decoded_token = decoded_jwt(token)</code>
           </li>
         </div>
       
@@ -7060,7 +7060,7 @@
 
             
 
-            <code class="ruby">    # Send a success response</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -7071,29 +7071,29 @@
 
             
 
-            <code class="ruby">    render json: {message: &#39;You have logged out successfully.&#39;}, status: :ok</code>
+            <code class="ruby">    if decoded_token.nil?</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="117">
+          <li class="missed" data-hits="0" data-linenumber="117">
             
             
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby">      render json: { error: &#39;Invalid token&#39; }, status: :unauthorized</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="118">
+          <li class="missed" data-hits="0" data-linenumber="118">
             
             
 
             
 
-            <code class="ruby"></code>
+            <code class="ruby">      return</code>
           </li>
         </div>
       
@@ -7104,29 +7104,29 @@
 
             
 
-            <code class="ruby"> </code>
+            <code class="ruby">    end</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="120">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="120">
+            
             
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">    # Revoke JWT Token here (if using a revocation strategy)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="121">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="121">
+            <span class="hits">3</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    JwtDenylist.create(jti: decoded_token[&#39;jti&#39;]) if decoded_token &amp;&amp; !JwtDenylist.where(jti: decoded_token[&#39;jti&#39;]).exists?</code>
           </li>
         </div>
       
@@ -7137,18 +7137,18 @@
 
             
 
-            <code class="ruby">  </code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="123">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="123">
+            
             
 
             
 
-            <code class="ruby">  def decoded_jwt(token)</code>
+            <code class="ruby">    # Sign out the user</code>
           </li>
         </div>
       
@@ -7159,7 +7159,7 @@
 
             
 
-            <code class="ruby">    decoded_token = JWT.decode(token, Rails.application.credentials.secret_key_base, true, { algorithm: &#39;HS256&#39; })</code>
+            <code class="ruby">    sign_out current_user</code>
           </li>
         </div>
       
@@ -7170,7 +7170,7 @@
 
             
 
-            <code class="ruby">    decoded_token.first # Return the payload</code>
+            <code class="ruby">    Rails.logger.debug &quot;Signingout user&quot; </code>
           </li>
         </div>
       
@@ -7181,29 +7181,29 @@
 
             
 
-            <code class="ruby">  rescue JWT::DecodeError =&gt; e</code>
+            <code class="ruby">    </code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="127">
+          <li class="never" data-hits="" data-linenumber="127">
             
             
 
             
 
-            <code class="ruby">    Rails.logger.error &quot;JWT Decode Error: #{e.message}&quot;</code>
+            <code class="ruby">    # Send a success response</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="128">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="128">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">    nil</code>
+            
+
+            <code class="ruby">    render json: {message: &#39;You have logged out successfully.&#39;}, status: :ok</code>
           </li>
         </div>
       
@@ -7231,6 +7231,138 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="131">
+            
+            
+
+            
+
+            <code class="ruby"> </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="132">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="133">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="134">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="135">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def decoded_jwt(token)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="136">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    decoded_token = JWT.decode(token, Rails.application.credentials.secret_key_base, true, { algorithm: &#39;HS256&#39; })</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="137">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    decoded_token.first # Return the payload</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="138">
+            
+            
+
+            
+
+            <code class="ruby">  rescue JWT::DecodeError =&gt; e</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="139">
+            
+            
+
+            
+
+            <code class="ruby">    Rails.logger.error &quot;JWT Decode Error: #{e.message}&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="140">
+            
+            
+
+            
+
+            <code class="ruby">    nil</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="141">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="142">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="143">
             
             
 
